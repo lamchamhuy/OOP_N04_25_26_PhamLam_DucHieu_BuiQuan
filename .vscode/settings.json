@@ -3,7 +3,10 @@
         "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT/src/test",
         "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT/src/model",
         "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT/src/controller",
-        "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT/src"
+        "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT/src",
+        "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT\\src\\Test",
+        "DUCHIEU_LAMPHAM_BUIQUAN_PROJECT\\src\\Model",
+        "."
     ],
     "java.project.referencedLibraries": []
 }
