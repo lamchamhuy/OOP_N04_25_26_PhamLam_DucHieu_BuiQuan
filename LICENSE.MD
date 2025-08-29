@@ -1,1 +1,0 @@
-yêu các bạn trong nhóm quá đi 
