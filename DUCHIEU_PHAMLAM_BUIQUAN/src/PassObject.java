@@ -9,6 +9,6 @@ public class PassObject {
         MyNumber n = new MyNumber();
         n.i = 14;
         PassObject.f(n);
-        System.out.println(n.i); // in ra gì?
+        System.out.println(n.i);
     }
 }

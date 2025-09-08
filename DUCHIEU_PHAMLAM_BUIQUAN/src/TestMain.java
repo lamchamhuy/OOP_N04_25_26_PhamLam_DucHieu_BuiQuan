@@ -10,9 +10,9 @@ public class TestMain {
 
         n1 = n2;         
         n2.i = 10;       
-        System.out.println(n1.i); // in ra 10
+        System.out.println(n1.i);
 
         n1.i = 20;        
-        System.out.println(n2.i); // in ra 20
+        System.out.println(n2.i);
     }
 }
