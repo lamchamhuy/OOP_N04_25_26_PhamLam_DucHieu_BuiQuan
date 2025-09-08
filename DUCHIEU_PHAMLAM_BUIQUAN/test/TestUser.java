@@ -5,17 +5,15 @@ import DUCHIEU_PHAMLAM_BUIQUAN.src.User;
 public class TestUser {
     public static void main(String[] args) {
 
-        User customer = new User("lampham", "12345", "lam@example.com", "customer");
+        User user1 = new User("lampham", "12345");
 
-        customer.displayInfo();
+        System.out.println("Username: " + user1.getUsername());
+        System.out.println("Password: " + user1.getPassword());
 
-        customer.setUsername("newCustomer");
-        customer.setPassword("67890");
-        customer.setEmail("newmail@example.com");
+        user1.setUsername("newUser");
+        user1.setPassword("67890");
 
-        System.out.println("\nSau khi cập nhật:");
-        customer.displayInfo();
-
-        System.out.println("\nDùng getter lấy mật khẩu: " + customer.getPassword());
+        System.out.println("Updated Username: " + user1.getUsername());
+        System.out.println("Updated Password: " + user1.getPassword());
     }
 }
