@@ -24,4 +24,8 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public void forgotPassword() {
+        System.out.println("Password reset link has been sent to the registered email for user: " + username);
+    }
 }

@@ -15,5 +15,6 @@ public class TestUser {
 
         System.out.println("Updated Username: " + user1.getUsername());
         System.out.println("Updated Password: " + user1.getPassword());
+        user1.forgotPassword();
     }
 }
