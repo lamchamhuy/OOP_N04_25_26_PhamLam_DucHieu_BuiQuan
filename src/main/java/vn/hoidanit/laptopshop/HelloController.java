@@ -16,7 +16,7 @@ public class HelloController {
 		return "Only user can access this page ";
 	}
 
-	@GetMapping("/adim")
+	@GetMapping("/admim")
 	public String adimPage() {
 		return "Only adim can access this page ";
 	}
