@@ -8,16 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	@GetMapping("/")
 	public String index() {
-		return "Hello World lam dep zai ";
+		return "Hello World lam ";
 	}
-
 	@GetMapping("/user")
 	public String userPage() {
 		return "Only user can access this page ";
 	}
 
-	@GetMapping("/admim")
-	public String adimPage() {
+	@GetMapping("/admin")
+	public String adminPage() {
 		return "Only adim can access this page ";
 	}
 }
