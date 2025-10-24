@@ -14,7 +14,7 @@ import jakarta.validation.Valid;
 import vn.lampham.laptopshop.domain.Product;
 import vn.lampham.laptopshop.domain.User;
 import vn.lampham.laptopshop.domain.dto.RegisterDTO;
-import vn.lampham.laptopshop.service.ProductService;   // ✅ đường dẫn chính xác
+import vn.lampham.laptopshop.service.ProductService;
 import vn.lampham.laptopshop.service.UserService;
 
 @Controller
@@ -36,6 +36,7 @@ public class HomePageController {
     public String getHomePage(Model model) {
         List<Product> products = this.productService.fetchProducts();
         model.addAttribute("products", products);
+
         return "client/homepage/show";
     }
 
@@ -73,4 +74,12 @@ public class HomePageController {
        
         return "client/auth/login";
     }
+
+     @GetMapping("/access-deny")
+    public String getDenyPage(Model model) {
+       
+        return "client/auth/deny";
+    }
+
+    
 }

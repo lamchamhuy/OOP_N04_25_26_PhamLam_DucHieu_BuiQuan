@@ -17,8 +17,8 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
-    // @Autowired
-    // private JdbcTemplate jdbcTemplate;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
     public UserService(UserRepository userRepository,RoleRepository roleRepository) {
         this.userRepository = userRepository;
@@ -63,5 +63,12 @@ public class UserService {
         user.setPassword(registerDTO.getPassword());
         return user;
         
+    }
+    public boolean checkEmailExist(String email){
+        return this.userRepository.existsByEmail(email);
+    }
+
+    public User getUserByEmail(String email){
+        return this.userRepository.findByEmail(email);
     }
 }

@@ -1,13 +1,12 @@
 package vn.lampham.laptopshop.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@EnableWebMvc
 public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
@@ -41,5 +40,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.jsp("/WEB-INF/view/", ".jsp");
+    }
+
+    // 🟢 Redirect /admin -> /admin/user
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addRedirectViewController("/admin", "/admin/user");
     }
 }
