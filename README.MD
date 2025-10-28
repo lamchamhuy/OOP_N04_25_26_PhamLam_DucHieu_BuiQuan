@@ -120,3 +120,93 @@ Mẫu thiết kế (Design Pattern):
 
 ```bash
 git clone https://github.com/yourusername/PhoneStoreManager.git
+
+🔹 Bước 3: Cấu hình CSDL
+
+Mở file:
+
+src/main/resources/application.properties
+
+
+Thêm thông tin kết nối:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/phonestore
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.thymeleaf.cache=false
+
+🔹 Bước 4: Chạy ứng dụng
+
+Mở file:
+
+src/main/java/com/example/phonestore/PhoneStoreApplication.java
+
+
+Chạy bằng IDE hoặc lệnh:
+
+mvn spring-boot:run
+
+🔹 Bước 5: Truy cập hệ thống
+http://localhost:8080/
+
+Đường dẫn	Mô tả chức năng
+/sanpham	Quản lý sản phẩm điện thoại
+/khachhang	Quản lý khách hàng
+/donhang	Quản lý đơn hàng
+/thongke	Thống kê doanh thu
+/ hoặc /home	Trang chủ hệ thống
+📂 Cấu trúc thư mục dự án
+PhoneStoreManager/
+├── controller/             # Controller (SanPham, DonHang, KhachHang,...)
+├── service/                # Business logic
+├── repository/             # Tầng truy cập dữ liệu (JPA)
+├── model/                  # Entity (SanPham, KhachHang, DonHang)
+├── templates/              # Giao diện Thymeleaf
+├── static/                 # CSS, JS, hình ảnh
+├── PhoneStoreApplication.java
+├── application.properties
+└── README.md
+
+📊 Sơ đồ & Thiết kế hệ thống
+
+✅ UML Class Diagram
+✅ Activity Diagram (Thêm/Sửa/Xóa)
+✅ Sequence Diagram
+✅ ERD (CSDL cửa hàng điện thoại)
+
+📁 Các hình được lưu trong thư mục img/
+
+👨‍💻 Nhóm thực hiện
+MSSV	Họ và tên	Vai trò
+23010772	Nguyễn Văn Tú	Thiết kế hệ thống, xây dựng chức năng chính
+2301xxxx	Trần Văn A	Giao diện & xử lý logic đơn hàng
+2301xxxx	Nguyễn Thị B	Xử lý thống kê & kiểm thử
+
+📍 Trường: Đại học Phenikaa
+📫 GitHub nhóm: https://github.com/yourusername/PhoneStoreManager
+
+💐 Lời tri ân
+
+Nhóm xin gửi lời cảm ơn chân thành tới Cô Nguyễn Lệ Thu đã hướng dẫn và hỗ trợ nhóm trong suốt quá trình thực hiện dự án.
+Dự án giúp chúng em củng cố kiến thức về lập trình Java – Spring Boot, thiết kế hệ thống phần mềm và làm việc nhóm hiệu quả.
+
+🌟 “Chúng em kính chúc Cô luôn mạnh khỏe, hạnh phúc và tiếp tục truyền cảm hứng học tập cho sinh viên.”
+
+✅ Kết luận
+
+✅ Hoàn thiện đầy đủ chức năng CRUD.
+
+✅ Thiết kế chuẩn MVC.
+
+✅ Giao diện trực quan, dễ sử dụng.
+
+✅ Sẵn sàng mở rộng REST API, phân quyền, cloud.
+
+📚 License
+
+Dự án phục vụ mục đích học tập tại Đại học Phenikaa.
+Không sử dụng cho mục đích thương mại nếu không có sự cho phép từ nhóm phát triển.
+
+📩 Liên hệ: nguyenvantu@phenikaa-uni.edu.vn
