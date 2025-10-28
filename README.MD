@@ -128,10 +128,14 @@ git clone https://github.com/yourusername/PhoneStoreManager.git
 
 Mở file:
 
-src/main/resources/application.properties
+```
 
+src/main/resources/application.properties
+```
 
 Thêm thông tin kết nối:
+
+```properties
 
 spring.datasource.url=jdbc:mysql://localhost:3306/phonestore
 spring.datasource.username=root
@@ -139,28 +143,41 @@ spring.datasource.password=123456
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.thymeleaf.cache=false
+```
 
 ### 🔹 Bước 4: Chạy ứng dụng
 
 Mở file:
+```
 
 src/main/java/com/example/phonestore/PhoneStoreApplication.java
+```
 
 
 Chạy bằng IDE hoặc lệnh:
+```bash
 
 mvn spring-boot:run
+```
+---
 
 ### 🔹 Bước 5: Truy cập hệ thống
+```
 http://localhost:8080/
+```
 
-Đường dẫn	Mô tả chức năng
-/sanpham	Quản lý sản phẩm điện thoại
-/khachhang	Quản lý khách hàng
-/donhang	Quản lý đơn hàng
-/thongke	Thống kê doanh thu
-/ hoặc /home	Trang chủ hệ thống
-📂 Cấu trúc thư mục dự án
+| Đường dẫn        | Chức năng                   |
+| ---------------- | --------------------------- |
+|   `/ sanpham	`  |  Quản lý sản phẩm điện thoại|
+|  `/ khachhang` 	 |   Quản lý khách hàng        |
+|   `/donhang` 	   |   Quản lý đơn hàng          |
+|  `/  hoặc /home` |	 Trang chủ hệ thống        |
+
+---
+
+## 📂 Cấu trúc thư mục dự án
+
+```
 PhoneStoreManager/
 ├── controller/             # Controller (SanPham, DonHang, KhachHang,...)
 ├── service/                # Business logic
@@ -172,7 +189,11 @@ PhoneStoreManager/
 ├── application.properties
 └── README.md
 
-📊 Sơ đồ & Thiết kế hệ thống
+```
+
+---
+
+## 📊 Sơ đồ & Thiết kế hệ thống
 
 ✅ UML Class Diagram
 ✅ Activity Diagram (Thêm/Sửa/Xóa)
@@ -181,14 +202,16 @@ PhoneStoreManager/
 
 📁 Các hình được lưu trong thư mục img/
 
+---
+
 👨‍💻 Nhóm thực hiện
-MSSV	Họ và tên	Vai trò
-23010772	Nguyễn Văn Tú	Thiết kế hệ thống, xây dựng chức năng chính
-2301xxxx	Trần Văn A	Giao diện & xử lý logic đơn hàng
-2301xxxx	Nguyễn Thị B	Xử lý thống kê & kiểm thử
+Phạm Tùng Lâm ăn cứt gà
+Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 
 📍 Trường: Đại học Phenikaa
-📫 GitHub nhóm: https://github.com/yourusername/PhoneStoreManager
+📫 GitHub nhóm: [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
+
+---
 
 💐 Lời tri ân
 
