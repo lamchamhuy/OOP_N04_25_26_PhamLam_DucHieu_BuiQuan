@@ -121,7 +121,7 @@ Mẫu thiết kế (Design Pattern):
 ```bash
 git clone https://github.com/yourusername/PhoneStoreManager.git
 
-🔹 Bước 3: Cấu hình CSDL
+### 🔹 Bước 3: Cấu hình CSDL
 
 Mở file:
 
@@ -137,7 +137,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.thymeleaf.cache=false
 
-🔹 Bước 4: Chạy ứng dụng
+### 🔹 Bước 4: Chạy ứng dụng
 
 Mở file:
 
@@ -148,7 +148,7 @@ Chạy bằng IDE hoặc lệnh:
 
 mvn spring-boot:run
 
-🔹 Bước 5: Truy cập hệ thống
+### 🔹 Bước 5: Truy cập hệ thống
 http://localhost:8080/
 
 Đường dẫn	Mô tả chức năng
