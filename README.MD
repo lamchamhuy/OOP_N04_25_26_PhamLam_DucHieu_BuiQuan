@@ -120,7 +120,10 @@ Mẫu thiết kế (Design Pattern):
 
 ```bash
 git clone https://github.com/yourusername/PhoneStoreManager.git
+```
+
 ---
+
 ### 🔹 Bước 3: Cấu hình CSDL
 
 Mở file:
