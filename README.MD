@@ -1,74 +1,122 @@
-# OOP_N04_25_26_PhamLam_DucHieu_BuiQuan
+<h1 align="center">📱 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN ĐIỆN THOẠI</h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-blue" />
+  <img src="https://img.shields.io/badge/SpringBoot-3.3.1-green" />
+  <img src="https://img.shields.io/badge/Database-MySQL-yellow" />
+</p>
 
-## 1. Giới thiệu
-Ứng dụng **LaptopShop** được xây dựng để quản lý bán laptop online.  
-Ứng dụng có các chức năng chính:
-- Quản lý Laptop (CRUD).
-- Quản lý Khách hàng.
-- Quản lý Đơn hàng.
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" width="100" />
+</p>
 
-
-Mỗi thành viên trong nhóm phụ trách 01 đối tượng khác nhau:
-- Phạm Lâm: Laptop
-- Đức Hiếu: Customer
-- Bùi Quân: Order
+<p align="center"><strong>Hệ thống quản lý cửa hàng điện thoại – tiện lợi – hiện đại – chính xác</strong></p>
 
 ---
 
-## 2. Class Diagram
-Dưới đây là sơ đồ chức năng **Class Diagram** của hệ thống:
+## 📘 Giới thiệu
 
-<img width="1196" height="660" alt="class_diagram" src="https://github.com/user-attachments/assets/852cc7c0-af23-4168-93da-ef6ac1561804" />
+Đây là ứng dụng quản lý cửa hàng bán điện thoại được phát triển bằng **Java Spring Boot** kết hợp với **Thymeleaf** cho giao diện người dùng.  
+Cơ sở dữ liệu sử dụng **MySQL (hoặc Aiven Cloud)**, được thiết kế theo mô hình **MVC 3 lớp**, giúp dễ bảo trì và mở rộng.
 
+Ứng dụng hỗ trợ các chức năng như:  
+🛍️ Quản lý sản phẩm điện thoại,  
+👨‍💼 Quản lý khách hàng,  
+📦 Quản lý đơn hàng,  
+💰 Thống kê doanh thu,  
+và tích hợp kiểm thử tự động với **JUnit**.
 
-## 3. Laptop - CRUD Code
+---
 
-Ví dụ cho đối tượng **Laptop** (Spring Boot):
+## 🎯 Mục tiêu dự án
 
-```java
-@RestController
-@RequestMapping("/laptops")
-public class LaptopController {
-    @Autowired
-    private LaptopRepository repo;
+- Xây dựng hệ thống quản lý cửa hàng điện thoại chuyên nghiệp, trực quan.  
+- Thiết kế kiến trúc rõ ràng theo mô hình **MVC 3 lớp**.  
+- Thực hiện đầy đủ **CRUD**, kiểm tra đầu vào và ràng buộc dữ liệu.  
+- Dễ mở rộng lên REST API hoặc thêm phân quyền quản trị viên.  
+- Áp dụng công nghệ hiện đại: Spring Boot, JPA, Bootstrap.
 
-    // CREATE
-    @PostMapping
-    public Laptop createLaptop(@RequestBody Laptop laptop) {
-        return repo.save(laptop);
-    }
+---
 
-    // READ
-    @GetMapping("/{id}")
-    public ResponseEntity<Laptop> getLaptop(@PathVariable Long id) {
-        return repo.findById(id)
-            .map(ResponseEntity::ok)
-            .orElse(ResponseEntity.notFound().build());
-    }
+## ⚙️ Chức năng chính
 
-    // UPDATE
-    @PutMapping("/{id}")
-    public ResponseEntity<Laptop> updateLaptop(@PathVariable Long id, @RequestBody Laptop laptop) {
-        return repo.findById(id).map(l -> {
-            l.setName(laptop.getName());
-            l.setBrand(laptop.getBrand());
-            l.setPrice(laptop.getPrice());
-            l.setDescription(laptop.getDescription());
-            l.setStockQuantity(laptop.getStockQuantity());
-            return ResponseEntity.ok(repo.save(l));
-        }).orElse(ResponseEntity.notFound().build());
-    }
+### 🧾 Quản lý Sản phẩm
 
-    // DELETE
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteLaptop(@PathVariable Long id) {
-        if (repo.existsById(id)) {
-            repo.deleteById(id);
-            return ResponseEntity.ok().build();
-        }
-        return ResponseEntity.notFound().build();
-    }
-}
+- Thêm, sửa, xóa, tìm kiếm sản phẩm điện thoại.  
+- Quản lý thông tin: mã, tên, hãng, giá, số lượng, bảo hành.  
+- Kiểm tra đầu vào hợp lệ, tránh trùng mã sản phẩm.
 
+### 👥 Quản lý Khách hàng
 
+- Thêm, sửa, xóa, tìm kiếm khách hàng.  
+- Kiểm tra định dạng email, số điện thoại, CCCD.  
+- Liên kết khách hàng với đơn hàng.
+
+### 🛒 Quản lý Đơn hàng
+
+- Tạo đơn hàng mới, cập nhật, xóa hoặc tra cứu.  
+- Tự động tính tổng tiền, giảm giá (nếu có).  
+- Liên kết với bảng khách hàng và sản phẩm.
+
+### 📈 Thống kê Doanh thu
+
+- Thống kê doanh thu theo tháng/năm.  
+- Lọc doanh thu theo hãng, loại sản phẩm.  
+- Hiển thị biểu đồ bằng bảng hoặc chart.
+
+---
+
+## 💻 Công nghệ sử dụng
+
+| Thành phần         | Công nghệ triển khai           |
+| ------------------ | ------------------------------ |
+| Ngôn ngữ           | Java 17                        |
+| Backend Framework  | Spring Boot 3.3.1 + Spring MVC |
+| Giao diện frontend | Thymeleaf + Bootstrap          |
+| ORM                | Hibernate + Spring Data JPA    |
+| Cơ sở dữ liệu      | MySQL / Aiven Cloud            |
+| Kiểm thử           | JUnit 5, Mockito               |
+| Build tool         | Maven                          |
+| Quản lý mã nguồn   | Git + GitHub                   |
+
+---
+
+## 🧠 Kiến trúc & Thiết kế
+
+Áp dụng mô hình **MVC 3 lớp**:
+
+- **Controller** – xử lý request từ người dùng.  
+- **Service** – xử lý logic nghiệp vụ.  
+- **Repository** – giao tiếp với CSDL qua JPA.
+
+Mẫu thiết kế (Design Pattern):
+
+- `Singleton` – quản lý kết nối và cấu hình.  
+- `Builder` – tạo đối tượng sản phẩm, đơn hàng.
+
+---
+
+## 🧪 Kiểm thử
+
+- Dùng `JUnit 5` để kiểm thử lớp Service.  
+- Dùng `Mockito` để mô phỏng Repository.  
+- Validate dữ liệu trước khi ghi CSDL.  
+- Có kiểm thử tự động CRUD cho từng module.
+
+---
+
+## 🚀 Hướng dẫn triển khai
+
+### 🔹 Bước 1: Chuẩn bị môi trường
+
+- Cài đặt **Java JDK 17+**  
+- Cài đặt **IntelliJ IDEA / Eclipse**  
+- Cài đặt **MySQL Server hoặc Aiven Cloud**  
+- Cài đặt **Git** (nếu clone từ GitHub)
+
+---
+
+### 🔹 Bước 2: Tải mã nguồn
+
+```bash
+git clone https://github.com/yourusername/PhoneStoreManager.git
