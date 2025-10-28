@@ -213,6 +213,17 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 
 ---
 
+## 📸 Hình ảnh hệ thống
+
+
+
+
+
+![Image](https://github.com/user-attachments/assets/41f6a81f-c88c-40a9-9610-2f1fce28cb50)
+
+
+
+
 💐 Lời tri ân
 
 Nhóm xin gửi lời cảm ơn chân thành tới Cô Nguyễn Lệ Thu đã hướng dẫn và hỗ trợ nhóm trong suốt quá trình thực hiện dự án.
