@@ -221,15 +221,15 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 | Sơ đồ lớp UML                                                                                    |
 | ![Sơ đồ quan hệ các lớp](img/Sodoquanhecaclop.png)                                               |
 | Sơ đồ quan hệ các lớp                                                                            |
-| ![Sơ đồ Activity đăng nhập](<img width="420" height="446" alt="Image" src="https://github.com/user-attachments/assets/7d54dfbc-b39b-4313-b65f-5e2e03da1d22" />)                                                |
+| ![Sơ đồ Activity đăng nhập](https://github.com/user-attachments/assets/7d54dfbc-b39b-4313-b65f-5e2e03da1d22)           |
 | Sơ đồ Activity đăng nhập                                                                         |
-| ![Sơ đồ Activity thêm chuyến bay](<img width="399" height="446" alt="Image" src="https://github.com/user-attachments/assets/75d73dc0-c045-4aa8-b785-549e49d0c821" />)                                      |
+| ![Sơ đồ Activity thêm chuyến bay](<img width="399" height="446" alt="Image" src="https://github.com/user-attachments/assets/75d73dc0-c045-4aa8-b785-549e49d0c821" />)      |
 | Sơ đồ Activity thêm chuyến bay                                                                   |
-| ![Sơ đồ Activity sửa chuyến bay](<img width="406" height="442" alt="Image" src="https://github.com/user-attachments/assets/d52fb2fb-049c-490c-ab6e-ab3c628de930" />)                                        |
+| ![Sơ đồ Activity sửa chuyến bay](<img width="406" height="442" alt="Image" src="https://github.com/user-attachments/assets/d52fb2fb-049c-490c-ab6e-ab3c628de930" />)        |
 | Sơ đồ Activity sửa chuyến bay                                                                    |
-| ![Sơ đồ Activity xóa chuyến bay](<img width="405" height="435" alt="Image" src="https://github.com/user-attachments/assets/d3761828-16a9-4379-937d-517b72fb5d4c" />)                                        |
+| ![Sơ đồ Activity xóa chuyến bay](<img width="405" height="435" alt="Image" src="https://github.com/user-attachments/assets/d3761828-16a9-4379-937d-517b72fb5d4c" />)        |
 | Sơ đồ Activity xóa chuyến bay                                                                    |
-| ![Sơ đồ Activity tìm kiếm chuyến bay](<img width="451" height="332" alt="Image" src="https://github.com/user-attachments/assets/6e711cd8-9b24-4616-9ef3-2a0d86d4f441" />)                               |
+| ![Sơ đồ Activity tìm kiếm chuyến bay](<img width="451" height="332" alt="Image" src="https://github.com/user-attachments/assets/6e711cd8-9b24-4616-9ef3-2a0d86d4f441" />)    |
 | Sơ đồ Activity tìm kiếm chuyến bay                                                               |
 | ![Sơ đồ Activity thêm khách hàng](<img width="424" height="438" alt="Image" src="https://github.com/user-attachments/assets/60b95d9b-4a39-4349-8ba0-bfc0694cb5cf" />)                                        |
 | Sơ đồ Activity thêm khách hàng                                                                   |
