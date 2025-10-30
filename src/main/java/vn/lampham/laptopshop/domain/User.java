@@ -127,6 +127,15 @@ public class User {
     public void setOrders(List<Order> orders){
         this.orders =orders;
     }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+
     
    @Override
     public String toString() {

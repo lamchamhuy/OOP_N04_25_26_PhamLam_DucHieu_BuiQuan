@@ -9,7 +9,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <meta name="description" content="Phạm Lâm - Dự án laptopshop" />
             <meta name="author" content="Lâm Phạm" />
-            <title>Product Detail - Lâm Phạm</title>
+            <title>Detail Product - Lâm Phạm</title>
             <link href="/css/styles.css" rel="stylesheet" />
             <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         </head>

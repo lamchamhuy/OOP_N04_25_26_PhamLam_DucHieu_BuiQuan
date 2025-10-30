@@ -1,15 +1,7 @@
 package vn.lampham.laptopshop.domain;
 
 import java.util.List;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 
 @Entity
@@ -27,44 +19,41 @@ public class Cart {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "cart")
-    private List<CartDetail> cartDetail;
+    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<CartDetail> cartDetails;
 
-    public long getId() {
-        return id;
-    }
+    // ==== Thông tin người nhận (đã thêm) ====
+    private String receiverName;
+    private String receiverAddress;
+    private String receiverPhone;
+    // =======================================
 
-    public void setId(long id) {
-        this.id = id;
-    }
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
 
-    public int getSum() {
-        return sum;
-    }
+    public int getSum() { return sum; }
+    public void setSum(int sum) { this.sum = sum; }
 
-    public void setSum(int sum) {
-        this.sum = sum;
-    }
+    public User getUser() { return user; }
+    public void setUser(User user) { this.user = user; }
 
-    public User getUser() {
-        return user;
-    }
+    public List<CartDetail> getCartDetails() { return cartDetails; }
+    public void setCartDetails(List<CartDetail> cartDetails) { this.cartDetails = cartDetails; }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+    // getters / setters cho receiver fields
+    public String getReceiverName() { return receiverName; }
+    public void setReceiverName(String receiverName) { this.receiverName = receiverName; }
 
-    public List<CartDetail> getCartDetail() {
-        return cartDetail;
-    }
+    public String getReceiverAddress() { return receiverAddress; }
+    public void setReceiverAddress(String receiverAddress) { this.receiverAddress = receiverAddress; }
 
-    public void setCartDetail(List<CartDetail> cartDetail) {
-        this.cartDetail = cartDetail;
-    }
+    public String getReceiverPhone() { return receiverPhone; }
+    public void setReceiverPhone(String receiverPhone) { this.receiverPhone = receiverPhone; }
 
     @Override
     public String toString() {
-        return "Cart [id=" + id + ", sum=" + sum + ", user=" + (user != null ? user.getEmail() : "null")
-                + ", cartDetail=" + (cartDetail != null ? cartDetail.size() + " items" : "null") + "]";
+        return "Cart [id=" + id + ", sum=" + sum + ", user=" + 
+               (user != null ? user.getEmail() : "null") + 
+               ", cartDetails=" + (cartDetails != null ? cartDetails.size() + " items" : "null") + "]";
     }
 }
