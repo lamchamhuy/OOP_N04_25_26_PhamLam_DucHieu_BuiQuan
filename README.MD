@@ -208,7 +208,7 @@ PhoneStoreManager/
 Phạm Tùng Lâm ăn cứt gà
 Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 
-📍 Trường: **Đại học Phenikaa**
+📍 Trường: **Đại học Phenikaa** 
 📫 GitHub nhóm: [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
 ---
@@ -249,40 +249,40 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 | Sơ đồ Activity tìm kiếm đơn hàng                                                                       |
 | ![Biểu đồ ca sử dụng tổng quát](https://github.com/user-attachments/assets/8b8bc1cf-044c-4908-8492-2a4b00c1ca05)                                          |
 | Biểu đồ ca sử dụng tổng quát                                                                     |
-| ![Biểu đồ use-case quản lý chuyến bay](img/Bieudouse-caseqlcb.png)                               |
+| ![Biểu đồ use-case quản lý chuyến bay](https://github.com/user-attachments/assets/a29eb62c-f58f-4647-9287-ece2afa70964)                               |
 | Biểu đồ use-case quản lý chuyến bay                                                              |
-| ![Biểu đồ use-case quản lý khách hàng](img/Bieudouse-caseqlkh.png)                               |
+| ![Biểu đồ use-case quản lý khách hàng](https://github.com/user-attachments/assets/243d0768-9f34-44aa-8159-af636db61d65)                               |
 | Biểu đồ use-case quản lý khách hàng                                                              |
-| ![Biểu đồ use-case quản lý vé](img/Bieudouse-caseqlve.png)                                       |
+| ![Biểu đồ use-case quản lý vé](https://github.com/user-attachments/assets/da889f4f-7bdc-4f22-9b54-c4d2f0980041)                                       |
 | Biểu đồ use-case quản lý vé                                                                      |
-| ![Biểu đồ use-case thống kê doanh thu](img/Bieudouse-casetkdt.png)                               |
+| ![Biểu đồ use-case thống kê doanh thu](https://github.com/user-attachments/assets/b99ab2c5-8367-4704-84df-1ab67523fad5)                               |
 | Biểu đồ use-case thống kê doanh thu                                                              |
-| ![Biểu đồ tuần tự chức năng đăng nhập](img/Bieudotuantucndn.png)                                 |
+| ![Biểu đồ tuần tự chức năng đăng nhập](https://github.com/user-attachments/assets/0a91a0f2-9df7-478d-8bba-b906b0bb9a01)                                 |
 | Biểu đồ tuần tự chức năng đăng nhập                                                              |
-| ![Biểu đồ tuần tự chức năng thêm chuyến bay](img/Bieudotuantucnthemcb.png)                       |
-| Biểu đồ tuần tự chức năng thêm chuyến bay                                                        |
-| ![Biểu đồ tuần tự chức năng sửa chuyến bay](img/Bieudotuantucnsuacb.png)                         |
-| Biểu đồ tuần tự chức năng sửa chuyến bay                                                         |
-| ![Biểu đồ tuần tự chức năng xóa chuyến bay](img/Bieudotuantucnxoacb.png)                         |
-| Biểu đồ tuần tự chức năng xóa chuyến bay                                                         |
-| ![Biểu đồ tuần tự chức năng tìm kiếm chuyến bay](img/Bieudotuantucntimkiemcb.png)                |
-| Biểu đồ tuần tự chức năng tìm kiếm chuyến bay                                                    |
-| ![Biểu đồ tuần tự chức năng thêm khách hàng](img/Bieudotuantucnthemkh.png)                       |
+| ![Biểu đồ tuần tự chức năng thêm sản phẩm](https://github.com/user-attachments/assets/dff938d2-f6d0-4ec3-b17e-9241c50c89e4)                       |
+| Biểu đồ tuần tự chức năng thêm sản phẩm                                                        |
+| ![Biểu đồ tuần tự chức năng sửa sản phẩm  ](https://github.com/user-attachments/assets/c97e5644-c6e3-437e-82e1-988c62fdf6e0)                         |
+| Biểu đồ tuần tự chức năng sửa sản phẩm                                                          |
+| ![Biểu đồ tuần tự chức năng xóa sản phẩm  ](https://github.com/user-attachments/assets/50adf1e0-770e-449e-8d86-8ab8a08196d5)                         |
+| Biểu đồ tuần tự chức năng xóa sản phẩm                                                         |
+| ![Biểu đồ tuần tự chức năng tìm kiếm sản phẩm  ](https://github.com/user-attachments/assets/f3cde4f1-46ba-4a0a-b94f-d2ff30f74c22)                |
+| Biểu đồ tuần tự chức năng tìm kiếm sản phẩm                                                      |
+| ![Biểu đồ tuần tự chức năng thêm khách hàng](https://github.com/user-attachments/assets/030aec41-4f10-4311-ad00-8ca7bee350b8)                       |
 | Biểu đồ tuần tự chức năng thêm khách hàng                                                        |
-| ![Biểu đồ tuần tự chức năng sửa khách hàng](img/Bieudotuantucnsuakh.png)                         |
+| ![Biểu đồ tuần tự chức năng sửa khách hàng](https://github.com/user-attachments/assets/720cb536-7277-4c75-8334-af5f8b3cc629)                         |
 | Biểu đồ tuần tự chức năng sửa khách hàng                                                         |
-| ![Biểu đồ tuần tự chức năng xóa khách hàng](img/Bieudotuantucnxoakh.png)                         |
+| ![Biểu đồ tuần tự chức năng xóa khách hàng](https://github.com/user-attachments/assets/1349f95b-3640-48de-bfdf-acd9976ad6e1)                         |
 | Biểu đồ tuần tự chức năng xóa khách hàng                                                         |
-| ![Biểu đồ tuần tự chức năng tìm kiếm khách hàng](img/Bieudotuantucntimkiemkh.png)                |
+| ![Biểu đồ tuần tự chức năng tìm kiếm khách hàng](https://github.com/user-attachments/assets/2a8394b3-5af3-49e9-a31b-5d16563f4c2b)                |
 | Biểu đồ tuần tự chức năng tìm kiếm khách hàng                                                    |
-| ![Biểu đồ tuần tự chức năng thêm vé](img/Bieudotuantucnthemve.png)                               |
-| Biểu đồ tuần tự chức năng thêm vé                                                                |
-| ![Biểu đồ tuần tự chức năng sửa vé](img/Bieudotuantucnsuave.png)                                 |
-| Biểu đồ tuần tự chức năng sửa vé                                                                 |
-| ![Biểu đồ tuần tự chức năng xóa vé](img/Bieudotuantucnxoave.png)                                 |
-| Biểu đồ tuần tự chức năng xóa vé                                                                 |
-| ![Biểu đồ tuần tự chức năng tìm kiếm vé](img/Bieudotuantucntimkiemve.png)                        |
-| Biểu đồ tuần tự chức năng tìm kiếm vé                                                            |
+| ![Biểu đồ tuần tự chức năng thêm đơn hàng](https://github.com/user-attachments/assets/b7c6f3a4-9a31-47d0-863a-c999f82663b4)                               |
+| Biểu đồ tuần tự chức năng thêm đơn hàng                                                               |
+| ![Biểu đồ tuần tự chức năng sửa đơn hàng](https://github.com/user-attachments/assets/21302a12-73a9-4309-adc1-8de65f605284)                                 |
+| Biểu đồ tuần tự chức năng sửa đơn hàng                                                                 |
+| ![Biểu đồ tuần tự chức năng xóa đơn hàng](https://github.com/user-attachments/assets/02ea5f77-aeb9-4d78-8c48-f0e087e8f3c0)                                 |
+| Biểu đồ tuần tự chức năng xóa đơn hàng                                                                |
+| ![Biểu đồ tuần tự chức năng tìm kiếm đơn hàng](https://github.com/user-attachments/assets/c6b924f5-2b6b-4328-aaad-a57b89c96832)                        |
+| Biểu đồ tuần tự chức năng tìm kiếm đơn hàng                                                            |
 | ![Sơ đồ thực thể liên kết](img/Sodothucthelienket.png)                                           |
 | Sơ đồ thực thể liên kết                                                                          |
 | ![Sơ đồ lớp và thiết kế lớp](img/Sodolopvathietkelop.png)                                        |
