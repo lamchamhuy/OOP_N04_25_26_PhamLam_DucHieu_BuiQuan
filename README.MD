@@ -217,209 +217,80 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 
 | Giao diện & Biểu đồ                                                                              |
 | ------------------------------------------------------------------------------------------------ |
-
-*
+| ![Sơ đồ lớp UML](img/sodolopUML.png)                                                             |
 | Sơ đồ lớp UML                                                                                    |
-
-*
+| ![Sơ đồ quan hệ các lớp](img/Sodoquanhecaclop.png)                                               |
 | Sơ đồ quan hệ các lớp                                                                            |
-
-| ![Sơ đồ Activity đăng nhập](https://github.com/user-attachments/assets/7d54dfbc-b39b-4313-b65f-5e2e03da1d22)                                                |
+| ![Sơ đồ Activity đăng nhập](<img width="420" height="446" alt="Image" src="https://github.com/user-attachments/assets/7d54dfbc-b39b-4313-b65f-5e2e03da1d22" />)                                                |
 | Sơ đồ Activity đăng nhập                                                                         |
-
-*
+| ![Sơ đồ Activity thêm chuyến bay](<img width="399" height="446" alt="Image" src="https://github.com/user-attachments/assets/75d73dc0-c045-4aa8-b785-549e49d0c821" />)                                      |
 | Sơ đồ Activity thêm chuyến bay                                                                   |
-
-
-
-
-*
+| ![Sơ đồ Activity sửa chuyến bay](<img width="406" height="442" alt="Image" src="https://github.com/user-attachments/assets/d52fb2fb-049c-490c-ab6e-ab3c628de930" />)                                        |
 | Sơ đồ Activity sửa chuyến bay                                                                    |
-
-
-
-*
+| ![Sơ đồ Activity xóa chuyến bay](<img width="405" height="435" alt="Image" src="https://github.com/user-attachments/assets/d3761828-16a9-4379-937d-517b72fb5d4c" />)                                        |
 | Sơ đồ Activity xóa chuyến bay                                                                    |
-
-
-
-*
+| ![Sơ đồ Activity tìm kiếm chuyến bay](<img width="451" height="332" alt="Image" src="https://github.com/user-attachments/assets/6e711cd8-9b24-4616-9ef3-2a0d86d4f441" />)                               |
 | Sơ đồ Activity tìm kiếm chuyến bay                                                               |
-
-
-
-*
+| ![Sơ đồ Activity thêm khách hàng](<img width="424" height="438" alt="Image" src="https://github.com/user-attachments/assets/60b95d9b-4a39-4349-8ba0-bfc0694cb5cf" />)                                        |
 | Sơ đồ Activity thêm khách hàng                                                                   |
-
-
-*
+| ![Sơ đồ Activity sửa khách hàng](<img width="425" height="430" alt="Image" src="https://github.com/user-attachments/assets/b1fdbd34-8415-4cd5-8f30-ab9e0939dd97" />)                                          |
 | Sơ đồ Activity sửa khách hàng                                                                    |
-
-
-
-*
+| ![Sơ đồ Activity xóa khách hàng](<img width="414" height="438" alt="Image" src="https://github.com/user-attachments/assets/eb1df6a1-d282-483d-8400-d19a0eaadc83" />)                                          |
 | Sơ đồ Activity xóa khách hàng                                                                    |
-
-
-
-
-*
+| ![Sơ đồ Activity tìm kiếm khách hàng](<img width="505" height="378" alt="Image" src="https://github.com/user-attachments/assets/c4d6bcf6-d8cb-4bd4-b076-336ac1bdd8a9" />)                                 |
 | Sơ đồ Activity tìm kiếm khách hàng                                                               |
-
-
-
-*
-| Sơ đồ Activity thêm vé                                                                           |
-
-
-*
-| Sơ đồ Activity sửa vé                                                                            |
-
-
-
-*
-| Sơ đồ Activity xóa vé                                                                            |
-
-
-
-*
-| Sơ đồ Activity tìm kiếm vé                                                                       |
-
-
-
-*
+| ![Sơ đồ Activity thêm đơn hàng](<img width="418" height="434" alt="Image" src="https://github.com/user-attachments/assets/3bbfae12-0d65-4085-8484-e0659a023e00" />)                                                |
+| Sơ đồ Activity thêm đơn hàng                                                                          |
+| ![Sơ đồ Activity sửa đơn hàng](<img width="430" height="429" alt="Image" src="https://github.com/user-attachments/assets/921ad8f9-b4dc-4226-86ab-83f6cb50a816" />)                                                  |
+| Sơ đồ Activity sửa đơn hàng                                                                             |
+| ![Sơ đồ Activity xóa đơn hàng ](<img width="412" height="433" alt="Image" src="https://github.com/user-attachments/assets/8e1887e2-31cb-4b86-9ece-e65f8a420d92" />)                                                  |
+| Sơ đồ Activity xóa đơn hàng                                                                            |
+| ![Sơ đồ Activity tìm kiếm đơn hàng ](***)                                         |
+| Sơ đồ Activity tìm kiếm đơn hàng                                                                       |
+| ![Biểu đồ ca sử dụng tổng quát](<img width="538" height="376" alt="Image" src="https://github.com/user-attachments/assets/8b8bc1cf-044c-4908-8492-2a4b00c1ca05" />)                                          |
 | Biểu đồ ca sử dụng tổng quát                                                                     |
-
-
-
-*
+| ![Biểu đồ use-case quản lý chuyến bay](img/Bieudouse-caseqlcb.png)                               |
 | Biểu đồ use-case quản lý chuyến bay                                                              |
-
-
-
-
-*
+| ![Biểu đồ use-case quản lý khách hàng](img/Bieudouse-caseqlkh.png)                               |
 | Biểu đồ use-case quản lý khách hàng                                                              |
-
-
-*
+| ![Biểu đồ use-case quản lý vé](img/Bieudouse-caseqlve.png)                                       |
 | Biểu đồ use-case quản lý vé                                                                      |
-
-
-
-*
+| ![Biểu đồ use-case thống kê doanh thu](img/Bieudouse-casetkdt.png)                               |
 | Biểu đồ use-case thống kê doanh thu                                                              |
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng đăng nhập](img/Bieudotuantucndn.png)                                 |
 | Biểu đồ tuần tự chức năng đăng nhập                                                              |
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng thêm chuyến bay](img/Bieudotuantucnthemcb.png)                       |
 | Biểu đồ tuần tự chức năng thêm chuyến bay                                                        |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng sửa chuyến bay](img/Bieudotuantucnsuacb.png)                         |
 | Biểu đồ tuần tự chức năng sửa chuyến bay                                                         |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng xóa chuyến bay](img/Bieudotuantucnxoacb.png)                         |
 | Biểu đồ tuần tự chức năng xóa chuyến bay                                                         |
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng tìm kiếm chuyến bay](img/Bieudotuantucntimkiemcb.png)                |
 | Biểu đồ tuần tự chức năng tìm kiếm chuyến bay                                                    |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng thêm khách hàng](img/Bieudotuantucnthemkh.png)                       |
 | Biểu đồ tuần tự chức năng thêm khách hàng                                                        |
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng sửa khách hàng](img/Bieudotuantucnsuakh.png)                         |
 | Biểu đồ tuần tự chức năng sửa khách hàng                                                         |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng xóa khách hàng](img/Bieudotuantucnxoakh.png)                         |
 | Biểu đồ tuần tự chức năng xóa khách hàng                                                         |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng tìm kiếm khách hàng](img/Bieudotuantucntimkiemkh.png)                |
 | Biểu đồ tuần tự chức năng tìm kiếm khách hàng                                                    |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng thêm vé](img/Bieudotuantucnthemve.png)                               |
 | Biểu đồ tuần tự chức năng thêm vé                                                                |
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng sửa vé](img/Bieudotuantucnsuave.png)                                 |
 | Biểu đồ tuần tự chức năng sửa vé                                                                 |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng xóa vé](img/Bieudotuantucnxoave.png)                                 |
 | Biểu đồ tuần tự chức năng xóa vé                                                                 |
-
-
-
-
-*
+| ![Biểu đồ tuần tự chức năng tìm kiếm vé](img/Bieudotuantucntimkiemve.png)                        |
 | Biểu đồ tuần tự chức năng tìm kiếm vé                                                            |
-
-
-
-
-
-*
+| ![Sơ đồ thực thể liên kết](img/Sodothucthelienket.png)                                           |
 | Sơ đồ thực thể liên kết                                                                          |
-
-
-
-
-
-*
+| ![Sơ đồ lớp và thiết kế lớp](img/Sodolopvathietkelop.png)                                        |
 | Sơ đồ lớp và thiết kế lớp                                                                        |
-
-
-
-
-
-
-*
+| ![Try-catch-finally](review/thunghiem/src/main/java/com/example/veapp/img/try-catch-example.png) |
 | Try-catch-finally                                                                                |
-
-
-
-*
+| ![UI quản lý vé](review/thunghiem/src/main/java/com/example/veapp/img/UI_quanlyve.png)           |
 | UI quản lý vé                                                                                    |
-
-
-
-
-
-
-
-
-
-
-
 
 
 
