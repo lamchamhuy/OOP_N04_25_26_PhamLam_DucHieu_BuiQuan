@@ -204,22 +204,224 @@ PhoneStoreManager/
 
 ---
 
-👨‍💻 Nhóm thực hiện
+## 👨‍💻 Nhóm thực hiện
 Phạm Tùng Lâm ăn cứt gà
 Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 
-📍 Trường: Đại học Phenikaa
+📍 Trường: **Đại học Phenikaa**
 📫 GitHub nhóm: [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
 ---
 
 ## 📸 Hình ảnh hệ thống
 
+| Giao diện & Biểu đồ                                                                              |
+| ------------------------------------------------------------------------------------------------ |
+
+*
+| Sơ đồ lớp UML                                                                                    |
+
+*
+| Sơ đồ quan hệ các lớp                                                                            |
+
+| ![Sơ đồ Activity đăng nhập](https://github.com/user-attachments/assets/7d54dfbc-b39b-4313-b65f-5e2e03da1d22)                                                |
+| Sơ đồ Activity đăng nhập                                                                         |
+
+*
+| Sơ đồ Activity thêm chuyến bay                                                                   |
 
 
 
 
-![Image](https://github.com/user-attachments/assets/41f6a81f-c88c-40a9-9610-2f1fce28cb50)
+*
+| Sơ đồ Activity sửa chuyến bay                                                                    |
+
+
+
+*
+| Sơ đồ Activity xóa chuyến bay                                                                    |
+
+
+
+*
+| Sơ đồ Activity tìm kiếm chuyến bay                                                               |
+
+
+
+*
+| Sơ đồ Activity thêm khách hàng                                                                   |
+
+
+*
+| Sơ đồ Activity sửa khách hàng                                                                    |
+
+
+
+*
+| Sơ đồ Activity xóa khách hàng                                                                    |
+
+
+
+
+*
+| Sơ đồ Activity tìm kiếm khách hàng                                                               |
+
+
+
+*
+| Sơ đồ Activity thêm vé                                                                           |
+
+
+*
+| Sơ đồ Activity sửa vé                                                                            |
+
+
+
+*
+| Sơ đồ Activity xóa vé                                                                            |
+
+
+
+*
+| Sơ đồ Activity tìm kiếm vé                                                                       |
+
+
+
+*
+| Biểu đồ ca sử dụng tổng quát                                                                     |
+
+
+
+*
+| Biểu đồ use-case quản lý chuyến bay                                                              |
+
+
+
+
+*
+| Biểu đồ use-case quản lý khách hàng                                                              |
+
+
+*
+| Biểu đồ use-case quản lý vé                                                                      |
+
+
+
+*
+| Biểu đồ use-case thống kê doanh thu                                                              |
+
+
+
+*
+| Biểu đồ tuần tự chức năng đăng nhập                                                              |
+
+
+
+*
+| Biểu đồ tuần tự chức năng thêm chuyến bay                                                        |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng sửa chuyến bay                                                         |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng xóa chuyến bay                                                         |
+
+
+
+*
+| Biểu đồ tuần tự chức năng tìm kiếm chuyến bay                                                    |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng thêm khách hàng                                                        |
+
+
+
+*
+| Biểu đồ tuần tự chức năng sửa khách hàng                                                         |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng xóa khách hàng                                                         |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng tìm kiếm khách hàng                                                    |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng thêm vé                                                                |
+
+
+
+*
+| Biểu đồ tuần tự chức năng sửa vé                                                                 |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng xóa vé                                                                 |
+
+
+
+
+*
+| Biểu đồ tuần tự chức năng tìm kiếm vé                                                            |
+
+
+
+
+
+*
+| Sơ đồ thực thể liên kết                                                                          |
+
+
+
+
+
+*
+| Sơ đồ lớp và thiết kế lớp                                                                        |
+
+
+
+
+
+
+*
+| Try-catch-finally                                                                                |
+
+
+
+*
+| UI quản lý vé                                                                                    |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
