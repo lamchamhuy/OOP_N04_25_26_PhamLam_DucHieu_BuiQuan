@@ -152,14 +152,18 @@ mvn spring-boot:run
 
 ### 🔹 Bước 5: Truy cập hệ thống
 ```
-http://localhost:8080
+http://localhost:8080/
 ```
 
 | Đường dẫn        | Chức năng                   |
 | ---------------- | --------------------------- |
-|   `/ sanpham	`  |  Quản lý sản phẩm điện thoại|
-|  `/ khachhang` 	 |   Quản lý khách hàng        |
-|   `/donhang` 	   |   Quản lý đơn hàng          |
+|   `/ admin  	`  |  Quản lý sản phẩm laptopshop|
+|  `/ admin/user`  |   Quản lý người dùng        |
+|   `/admin/product|   Quản lý sản phẩm          |
+|  `/admin/order   |	 Quản lý đơn hàng          |
+|   `/admin/product|   Quản lý sản phẩm          |
+|  `/  hoặc /home` |	 Trang chủ hệ thống        |
+|   `/admin/product|   Quản lý sản phẩm          |
 |  `/  hoặc /home` |	 Trang chủ hệ thống        |
 
 ---
