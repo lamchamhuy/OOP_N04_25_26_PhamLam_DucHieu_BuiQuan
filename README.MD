@@ -205,13 +205,13 @@ PhoneStoreManager/
 ---
 
 ## 👨‍💻 Nhóm thực hiện
-| MSSV     | Họ và Tên                 | Vai trò chi tiết                                                                               |
-| -------- | ------------------------- | ---------------------------------------------------------------------------------------------- |
+| MSSV      | Họ và Tên                | Vai trò chi tiết                                                                                      |
+| --------  | -------------------------| ----------------------------------------------------------------------------------------------        |
 | 23010820  | **Phạm Tùng Lâm **       |Thiết kế Xây dựng giao diện web laptopshop chính , xây dựng chức năng quản lý user, order,viết README  |
-| 23010725 | **Buì Minh Quân**         | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm     |
-| 23010726  | **Nguyễn Đức Hiếu ** | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README   |
+| 23010725  | **Buì Minh Quân **       | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm                            |
+| 23010726  | **Nguyễn Đức Hiếu **     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                       |
 
-📍 Trường: **Đại học Phenikaa** 
+📍 Trường: **Đại học Phenikaa ** 
 📫 GitHub nhóm: [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
 ---
