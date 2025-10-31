@@ -194,6 +194,7 @@ PhoneStoreManager/
 ---
 
 ## 📊 Sơ đồ & Thiết kế hệ thống
+- Các biểu đồ đã hoàn thành:
 
 ✅ UML Class Diagram
 ✅ Activity Diagram (Thêm/Sửa/Xóa)
@@ -207,12 +208,13 @@ PhoneStoreManager/
 ## 👨‍💻 Nhóm thực hiện
 | MSSV      | Họ và Tên                | Vai trò chi tiết                                                                                      |
 | --------  | -------------------------| ----------------------------------------------------------------------------------------------        |
-| 23010820  | **Phạm Tùng Lâm **       |Thiết kế Xây dựng giao diện web laptopshop chính , xây dựng chức năng quản lý user, order,viết README  |
-| 23010725  | **Buì Minh Quân **       | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm                            |
-| 23010726  | **Nguyễn Đức Hiếu **     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                       |
+| 23010820  | **Phạm Tùng Lâm**       |Thiết kế Xây dựng giao diện web laptopshop chính , xây dựng chức năng quản lý user, order,viết README  |
+| 23010725  | **Bùi Minh Quân**       | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm                            |
+| 23010726  | **Nguyễn Đức Hiếu**     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                       |
 
-📍 Trường: **Đại học Phenikaa ** 
-📫 GitHub nhóm: [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
+📍 Trường: **Đại học Phenikaa** 
+📫 GitHub nhóm: 
+[https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
 ---
 
@@ -285,7 +287,24 @@ PhoneStoreManager/
 | ![Sơ đồ thực thể liên kết](https://github.com/user-attachments/assets/165cd1c8-0127-49a6-a441-f6a26207577f)                                           |
 | Sơ đồ thực thể liên kết                                                                          |
                                                                                 
+## 🗂️ Sơ đồ cơ sở dữ liệu (ERD)
 
+### 1. 🔹 Sơ đồ hệ thống cơ bản
+
+Hệ thống cửa hàng bán điện thoại được xây dựng với các bảng chính như:
+
+- `sanpham`: lưu thông tin các sản phẩm điện thoại
+- `khachhang`: lưu thông tin người mua hàng
+- `donhang`: lưu thông tin các đơn hàng được đặt
+- `account`: lưu thông tin tài khoản đăng nhập của khách hàng
+
+![Sơ đồ ERD cơ bản](https://github.com/user-attachments/assets/71308f84-6d87-4744-a669-51370ac3bbd4)
+
+- Một khách hàng có thể đặt nhiều đơn hàng (`1 - n`)
+- Mỗi đơn hàng có thể chứa nhiều sản phẩm, và mỗi sản phẩm có thể xuất hiện trong nhiều đơn hàng  (`n - n`)
+- Bảng `account` có quan hệ 1-1 với bảng `khachhang` để phân quyền người dùng
+
+---
 
 
 
