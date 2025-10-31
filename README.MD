@@ -16,21 +16,21 @@
 
 ## 📘 Giới thiệu
 
-Đây là ứng dụng quản lý cửa hàng bán điện thoại được phát triển bằng **Java Spring Boot** kết hợp với **Thymeleaf** cho giao diện người dùng.  
+Đây là ứng dụng quản lý cửa hàng bán laptopshop được phát triển bằng **Java Spring Boot** kết hợp với **Thymeleaf** cho giao diện người dùng.  
 Cơ sở dữ liệu sử dụng **MySQL (hoặc Aiven Cloud)**, được thiết kế theo mô hình **MVC 3 lớp**, giúp dễ bảo trì và mở rộng.
 
 Ứng dụng hỗ trợ các chức năng như:  
-🛍️ Quản lý sản phẩm điện thoại,  
+🛍️ Quản lý sản phẩm Laptopshop,  
 👨‍💼 Quản lý khách hàng,  
 📦 Quản lý đơn hàng,  
-💰 Thống kê doanh thu,  
+👨‍💼 Quản lý người dùng,  
 và tích hợp kiểm thử tự động với **JUnit**.
 
 ---
 
 ## 🎯 Mục tiêu dự án
 
-- Xây dựng hệ thống quản lý cửa hàng điện thoại chuyên nghiệp, trực quan.  
+- Xây dựng hệ thống quản lý cửa hàng Laptopshop chuyên nghiệp, trực quan.  
 - Thiết kế kiến trúc rõ ràng theo mô hình **MVC 3 lớp**.  
 - Thực hiện đầy đủ **CRUD**, kiểm tra đầu vào và ràng buộc dữ liệu.  
 - Dễ mở rộng lên REST API hoặc thêm phân quyền quản trị viên.  
@@ -42,29 +42,23 @@ và tích hợp kiểm thử tự động với **JUnit**.
 
 ### 🧾 Quản lý Sản phẩm
 
-- Thêm, sửa, xóa, tìm kiếm sản phẩm điện thoại.  
-- Quản lý thông tin: mã, tên, hãng, giá, số lượng, bảo hành.  
+- Thêm, sửa, xóa, tạo mới một sản phẩm.  
+- Quản lý thông tin: ID, Name,	Price, Factory,Target, Quantity. 
 - Kiểm tra đầu vào hợp lệ, tránh trùng mã sản phẩm.
 
 ### 👥 Quản lý Khách hàng
 
-- Thêm, sửa, xóa, tìm kiếm khách hàng.  
-- Kiểm tra định dạng email, số điện thoại, CCCD.  
+- Thêm, sửa, xóa, tạo mới một người dùng.  
+- Kiểm tra định dạng: ID, email, Full Name,Role.  
 - Liên kết khách hàng với đơn hàng.
 
 ### 🛒 Quản lý Đơn hàng
 
-- Tạo đơn hàng mới, cập nhật, xóa hoặc tra cứu.  
-- Tự động tính tổng tiền, giảm giá (nếu có).  
+- Thêm, sửa, xóa, tạo mới một đơn hàng.
+-Quản lý thông tin: ID,Total Price (VNĐ),	User, Status. 
+- Tự động tính tổng tiền đơn hàng.  
 - Liên kết với bảng khách hàng và sản phẩm.
 
-### 📈 Thống kê Doanh thu
-
-- Thống kê doanh thu theo tháng/năm.  
-- Lọc doanh thu theo hãng, loại sản phẩm.  
-- Hiển thị biểu đồ bằng bảng hoặc chart.
-
----
 
 ## 💻 Công nghệ sử dụng
 
@@ -77,7 +71,7 @@ và tích hợp kiểm thử tự động với **JUnit**.
 | Cơ sở dữ liệu      | MySQL / Aiven Cloud            |
 | Kiểm thử           | JUnit 5, Mockito               |
 | Build tool         | Maven                          |
-| Quản lý mã nguồn   | Git + GitHub                   |
+| Quản lý mã nguồn   | GitHub                         |
 
 ---
 
@@ -89,12 +83,6 @@ và tích hợp kiểm thử tự động với **JUnit**.
 - **Service** – xử lý logic nghiệp vụ.  
 - **Repository** – giao tiếp với CSDL qua JPA.
 
-Mẫu thiết kế (Design Pattern):
-
-- `Singleton` – quản lý kết nối và cấu hình.  
-- `Builder` – tạo đối tượng sản phẩm, đơn hàng.
-
----
 
 ## 🧪 Kiểm thử
 
@@ -119,7 +107,7 @@ Mẫu thiết kế (Design Pattern):
 ### 🔹 Bước 2: Tải mã nguồn
 
 ```bash
-git clone https://github.com/yourusername/PhoneStoreManager.git
+git clone https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/blob/master.git
 ```
 
 ---
