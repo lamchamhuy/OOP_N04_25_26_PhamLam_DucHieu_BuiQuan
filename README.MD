@@ -118,19 +118,19 @@ Mở file:
 
 ```
 
-src/main/resources/application.properties
+C:\Users\ASUS\01.java-mvc\01-java-spring-laptopshop-starter-master\src\main\resources\application.properties
 ```
 
 Thêm thông tin kết nối:
 
 ```properties
 
-spring.datasource.url=jdbc:mysql://localhost:3306/phonestore
-spring.datasource.username=root
-spring.datasource.password=123456
 spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/laptopshop
+spring.datasource.username=root
+spring.datasource.password=302004
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.show-sql=true
-spring.thymeleaf.cache=false
 ```
 
 ### 🔹 Bước 4: Chạy ứng dụng
