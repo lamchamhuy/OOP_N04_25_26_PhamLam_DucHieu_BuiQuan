@@ -11,7 +11,7 @@
                 <meta name="author" content="" />
                 <title>403 - Laptopshop</title>
 
-                <!-- ✅ Đường dẫn đúng -->
+                <!--  Đường dẫn đúng -->
                 <link href="<c:url value='/resources/css/styles.css' />" rel="stylesheet" />
                 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
             </head>

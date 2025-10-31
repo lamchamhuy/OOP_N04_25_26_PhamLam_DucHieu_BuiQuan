@@ -1,4 +1,4 @@
-<h1 align="center">📱 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN ĐIỆN THOẠI</h1>
+<h1 align="center">📱 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN Laptopshop</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17-blue" />
@@ -10,7 +10,7 @@
   <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" width="100" />
 </p>
 
-<p align="center"><strong>Hệ thống quản lý cửa hàng điện thoại – tiện lợi – hiện đại – chính xác</strong></p>
+<p align="center"><strong>Hệ thống quản lý cửa hàng Laptopshop – tiện lợi – hiện đại – chính xác</strong></p>
 
 ---
 
