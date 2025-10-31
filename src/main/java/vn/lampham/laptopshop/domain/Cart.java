@@ -1,7 +1,17 @@
 package vn.lampham.laptopshop.domain;
 
 import java.util.List;
-import jakarta.persistence.*;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Min;
 
 @Entity
@@ -12,22 +22,21 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Min(value = 0)
+    @Min(0)
     private int sum;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<CartDetail> cartDetails;
 
-    // ==== Thông tin người nhận (đã thêm) ====
     private String receiverName;
     private String receiverAddress;
     private String receiverPhone;
-    // =======================================
 
+    // ===== Getters/Setters =====
     public long getId() { return id; }
     public void setId(long id) { this.id = id; }
 
@@ -40,7 +49,6 @@ public class Cart {
     public List<CartDetail> getCartDetails() { return cartDetails; }
     public void setCartDetails(List<CartDetail> cartDetails) { this.cartDetails = cartDetails; }
 
-    // getters / setters cho receiver fields
     public String getReceiverName() { return receiverName; }
     public void setReceiverName(String receiverName) { this.receiverName = receiverName; }
 
@@ -52,8 +60,7 @@ public class Cart {
 
     @Override
     public String toString() {
-        return "Cart [id=" + id + ", sum=" + sum + ", user=" + 
-               (user != null ? user.getEmail() : "null") + 
-               ", cartDetails=" + (cartDetails != null ? cartDetails.size() + " items" : "null") + "]";
+        return "Cart{id=" + id + ", sum=" + sum + ", user=" +
+                (user != null ? user.getEmail() : "null") + "}";
     }
 }

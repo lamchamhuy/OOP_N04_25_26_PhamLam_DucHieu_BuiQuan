@@ -48,34 +48,39 @@ public class SecurityConfiguration {
 
     @Bean
     public SpringSessionRememberMeServices rememberMeServices() {
-	SpringSessionRememberMeServices rememberMeServices =
-			new SpringSessionRememberMeServices();
-	// optionally customize
-	rememberMeServices.setAlwaysRemember(true);
-	return rememberMeServices;
-}
-
+        SpringSessionRememberMeServices rememberMeServices =
+                new SpringSessionRememberMeServices();
+        // optionally customize
+        rememberMeServices.setAlwaysRemember(true);
+        return rememberMeServices;
+    }
 
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http, AuthenticationSuccessHandler customSuccessHandler) throws Exception {
         http
             .authorizeHttpRequests(authorize -> authorize
                 .dispatcherTypeMatchers(DispatcherType.FORWARD, DispatcherType.INCLUDE).permitAll()
-                .requestMatchers("/", "/login", "/register", "/product/**", "/client/**","/resources/**", "/css/**", "/js/**", "/images/**","/cart/**" ).permitAll()
+                .requestMatchers("/", "/login", "/register", "/product/**", "/client/**",
+                                 "/resources/**", "/css/**", "/js/**", "/images/**",
+                                 "/cart/**").permitAll()
                 .requestMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
-            .sessionManagement((sessionManagement) -> sessionManagement
-			.sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
-	.invalidSessionUrl("/logout?expired")
-				.maximumSessions(1)
-	.maxSessionsPreventsLogin(false))
-
-	.logout(logout->logout.deleteCookies("JSESSIONID").invalidateHttpSession(true))
-
-
+            .sessionManagement(session -> session
+                .sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
+                .invalidSessionUrl("/logout?expired")
+                .maximumSessions(1)
+                .maxSessionsPreventsLogin(false)
+            )
+            .logout(logout -> logout
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/")
+                .deleteCookies("JSESSIONID")
+                .invalidateHttpSession(true)
+                .permitAll()
+            )
             .rememberMe(r -> r.rememberMeServices(rememberMeServices()))
-            .formLogin(formLogin -> formLogin
+            .formLogin(form -> form
                 .loginPage("/login")
                 .loginProcessingUrl("/login")
                 .failureUrl("/login?error")
@@ -83,15 +88,9 @@ public class SecurityConfiguration {
                 .permitAll()
             )
             .exceptionHandling(ex -> ex.accessDeniedPage("/access-deny"));
-            
-            // .logout(logout -> logout
-            //     .logoutUrl("/logout")
-            //     .logoutSuccessUrl("/")
-            //     .permitAll()
-            // );
-            //  http.csrf().disable()
-             
 
+        // Nếu cần debug, có thể tạm tắt CSRF:
+        // http.csrf().disable();
 
         return http.build();
     }

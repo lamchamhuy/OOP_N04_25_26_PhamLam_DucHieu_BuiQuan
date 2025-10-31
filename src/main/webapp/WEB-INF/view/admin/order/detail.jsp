@@ -32,15 +32,17 @@
                                 <div class="mt-5">
                                     <div class="row">
                                         <div class="col-12 mx-auto">
-                                            <!-- Tiêu đề có id động -->
                                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                                <h3>Orders detail with id ${order.id}</h3>
-
+                                                <h3>Order ID: ${order.id}</h3>
                                             </div>
+
+                                            <p><strong>Receiver:</strong> ${order.receiverName}</p>
+                                            <p><strong>Address:</strong> ${order.receiverAddress}</p>
+                                            <p><strong>Phone:</strong> ${order.receiverPhone}</p>
+                                            <p><strong>Status:</strong> ${order.status}</p>
 
                                             <hr />
 
-                                            <!-- Bảng chi tiết sản phẩm -->
                                             <table class="table table-bordered table-hover">
                                                 <thead>
                                                     <tr>
@@ -53,7 +55,16 @@
                                                 <tbody>
                                                     <c:forEach var="detail" items="${order.orderDetails}">
                                                         <tr>
-                                                            <td>${detail.product.name}</td>
+                                                            <td>
+                                                                <c:choose>
+                                                                    <c:when test="${not empty detail.product}">
+                                                                        ${detail.product.name}
+                                                                    </c:when>
+                                                                    <c:otherwise>
+                                                                        <i class="text-muted">Unknown product</i>
+                                                                    </c:otherwise>
+                                                                </c:choose>
+                                                            </td>
                                                             <td>
                                                                 <fmt:formatNumber value="${detail.product.price}"
                                                                     type="number" />
@@ -68,21 +79,19 @@
                                                     </c:forEach>
                                                 </tbody>
                                             </table>
-                                            <a href="/admin/order" class="btn btn-success">
-                                                <i class="fas fa-arrow-left"></i> Back
-                                            </a>
 
-
-                                            <!-- Tổng cộng -->
-                                            <!-- <div class="text-end mt-3">
-                                                <strong>Total Price: </strong>
-                                                <fmt:formatNumber value="${order.totalPrice}" type="number" /> VNĐ
-                                            </div> -->
-
-                                            <!-- Nếu không có sản phẩm -->
                                             <c:if test="${empty order.orderDetails}">
                                                 <p class="text-center text-muted mt-3">No products in this order.</p>
                                             </c:if>
+
+                                            <div class="text-end mt-3">
+                                                <strong>Total Price: </strong>
+                                                <fmt:formatNumber value="${order.totalPrice}" type="number" /> VNĐ
+                                            </div>
+
+                                            <a href="/admin/order" class="btn btn-success mt-3">
+                                                <i class="fas fa-arrow-left"></i> Back
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

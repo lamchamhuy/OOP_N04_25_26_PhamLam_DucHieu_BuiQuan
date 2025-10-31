@@ -27,44 +27,53 @@
                             <div class="mt-5">
                                 <div class="row">
                                     <div class="col-8 mx-auto">
-                                        <form action="/admin/order/create" method="post">
-
+                                        <form action="${pageContext.request.contextPath}/admin/order/create"
+                                            method="post" modelAttribute="newOrder">
+                                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
                                             <div class="mb-3">
                                                 <label class="form-label">Receiver Name</label>
-                                                <input type="text" name="receiverName" class="form-control" required />
+                                                <input type="text" name="receiverName" class="form-control"
+                                                    value="${newOrder.receiverName}" required />
                                             </div>
 
                                             <div class="mb-3">
                                                 <label class="form-label">Receiver Address</label>
                                                 <input type="text" name="receiverAddress" class="form-control"
-                                                    required />
+                                                    value="${newOrder.receiverAddress}" required />
                                             </div>
 
                                             <div class="mb-3">
                                                 <label class="form-label">Receiver Phone</label>
-                                                <input type="text" name="receiverPhone" class="form-control" required />
+                                                <input type="text" name="receiverPhone" class="form-control"
+                                                    value="${newOrder.receiverPhone}" required />
                                             </div>
 
                                             <div class="mb-3">
                                                 <label class="form-label">Total Price (VNĐ)</label>
-                                                <input type="number" name="totalPrice" class="form-control" step="0.01"
-                                                    required />
+                                                <!-- Người dùng có thể nhập 17.490.000 hoặc 17490000 -->
+                                                <input type="text" name="totalPrice" class="form-control"
+                                                    value="${newOrder.totalPrice}" required />
                                             </div>
 
                                             <div class="mb-3">
                                                 <label class="form-label">Status</label>
                                                 <select name="status" class="form-select" required>
-                                                    <option value="PENDING">PENDING</option>
-                                                    <option value="CONFIRMED">CONFIRMED</option>
-                                                    <option value="SHIPPING">SHIPPING</option>
-                                                    <option value="COMPLETED">COMPLETED</option>
+                                                    <option value="PENDING" ${newOrder.status=='PENDING' ? 'selected'
+                                                        : '' }>PENDING</option>
+                                                    <option value="CONFIRMED" ${newOrder.status=='CONFIRMED'
+                                                        ? 'selected' : '' }>CONFIRMED</option>
+                                                    <option value="SHIPPING" ${newOrder.status=='SHIPPING' ? 'selected'
+                                                        : '' }>SHIPPING</option>
+                                                    <option value="COMPLETED" ${newOrder.status=='COMPLETED'
+                                                        ? 'selected' : '' }>COMPLETED</option>
                                                 </select>
                                             </div>
 
                                             <button type="submit" class="btn btn-success">
                                                 <i class="fas fa-plus-circle"></i> Create Order
                                             </button>
-                                            <a href="/admin/order" class="btn btn-success">
+                                            <a href="${pageContext.request.contextPath}/admin/order"
+                                                class="btn btn-secondary">
                                                 <i class="fas fa-arrow-left"></i> Back
                                             </a>
                                         </form>

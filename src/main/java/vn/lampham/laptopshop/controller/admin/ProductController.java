@@ -1,12 +1,15 @@
 package vn.lampham.laptopshop.controller.admin;
 
+import java.beans.PropertyEditorSupport;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,6 +30,23 @@ public class ProductController {
     public ProductController(UploadService uploadService, ProductService productService) {
         this.uploadService = uploadService;
         this.productService = productService;
+    }
+
+    // ✅ Cho phép nhập giá kiểu "17.490.000"
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        binder.registerCustomEditor(Double.class, new PropertyEditorSupport() {
+            @Override
+            public void setAsText(String text) throws IllegalArgumentException {
+                if (text == null || text.trim().isEmpty()) {
+                    setValue(null);
+                } else {
+                    // Xóa dấu chấm ngăn cách hàng nghìn (ví dụ: 17.490.000 -> 17490000)
+                    text = text.replace(".", "").replace(",", ".");
+                    setValue(Double.parseDouble(text));
+                }
+            }
+        });
     }
 
     // Hiển thị danh sách sản phẩm
@@ -82,13 +102,13 @@ public class ProductController {
         return "redirect:/admin/product";
     }
 
-    // ✅ Xem chi tiết sản phẩm — Dùng giao diện của CLIENT
+    // ✅ Xem chi tiết sản phẩm — Dùng giao diện CLIENT
     @GetMapping("/admin/product/{id}")
     public String getProductDetailPage(Model model, @PathVariable long id) {
         Optional<Product> pr = this.productService.fetchProductById(id);
         if (pr.isPresent()) {
             model.addAttribute("product", pr.get());
-            return "client/product/detail"; // 👉 dùng lại giao diện client
+            return "client/product/detail";
         }
         return "redirect:/admin/product";
     }

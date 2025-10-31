@@ -33,7 +33,6 @@
                                         <div class="col-12 mx-auto">
                                             <div class="d-flex justify-content-between">
                                                 <h3>Table Orders</h3>
-                                                <!-- Nếu bạn có chức năng tạo đơn hàng thủ công -->
                                                 <a href="/admin/order/create" class="btn btn-primary">Create Order</a>
                                             </div>
 
@@ -53,10 +52,19 @@
                                                         <tr>
                                                             <td>${order.id}</td>
                                                             <td>
-                                                                <fmt:formatNumber type="number"
-                                                                    value="${order.totalPrice}" />
+                                                                <fmt:formatNumber value="${order.totalPrice}"
+                                                                    type="number" />
                                                             </td>
-                                                            <td>${order.user.fullName}</td>
+                                                            <td>
+                                                                <c:choose>
+                                                                    <c:when test="${not empty order.user}">
+                                                                        ${order.user.fullName}
+                                                                    </c:when>
+                                                                    <c:otherwise>
+                                                                        <i class="text-muted">No user</i>
+                                                                    </c:otherwise>
+                                                                </c:choose>
+                                                            </td>
                                                             <td>${order.status}</td>
                                                             <td>
                                                                 <a href="/admin/order/${order.id}"
@@ -71,7 +79,6 @@
                                                 </tbody>
                                             </table>
 
-                                            <!-- Trường hợp không có đơn hàng -->
                                             <c:if test="${empty orders}">
                                                 <p class="text-center text-muted mt-3">No orders found.</p>
                                             </c:if>
