@@ -205,10 +205,13 @@ PhoneStoreManager/
 ---
 
 ## 👨‍💻 Nhóm thực hiện
-Phạm Tùng Lâm ăn cứt gà
-Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
+| MSSV      | Họ và Tên                | Vai trò chi tiết                                                                                      |
+| --------  | -------------------------| ----------------------------------------------------------------------------------------------        |
+| 23010820  | **Phạm Tùng Lâm **       |Thiết kế Xây dựng giao diện web laptopshop chính , xây dựng chức năng quản lý user, order,viết README  |
+| 23010725  | **Buì Minh Quân **       | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm                            |
+| 23010726  | **Nguyễn Đức Hiếu **     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                       |
 
-📍 Trường: **Đại học Phenikaa** 
+📍 Trường: **Đại học Phenikaa ** 
 📫 GitHub nhóm: [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
 ---
@@ -217,20 +220,18 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 
 | Giao diện & Biểu đồ                                                                              |
 | ------------------------------------------------------------------------------------------------ |
-| ![Sơ đồ lớp UML](img/sodolopUML.png)                                                             |
+| ![Sơ đồ lớp UML](https://github.com/user-attachments/assets/a3614ee5-2bd5-44ac-afff-b191f2576194)                                                             |
 | Sơ đồ lớp UML                                                                                    |
-| ![Sơ đồ quan hệ các lớp](img/Sodoquanhecaclop.png)                                               |
-| Sơ đồ quan hệ các lớp                                                                            |
 | ![Sơ đồ Activity đăng nhập](https://github.com/user-attachments/assets/7d54dfbc-b39b-4313-b65f-5e2e03da1d22)           |
 | Sơ đồ Activity đăng nhập                                                                         |
-| ![Sơ đồ Activity thêm chuyến bay](https://github.com/user-attachments/assets/75d73dc0-c045-4aa8-b785-549e49d0c821)      |
-| Sơ đồ Activity thêm chuyến bay                                                                   |
-| ![Sơ đồ Activity sửa chuyến bay](https://github.com/user-attachments/assets/d52fb2fb-049c-490c-ab6e-ab3c628de930)        |
-| Sơ đồ Activity sửa chuyến bay                                                                    |
-| ![Sơ đồ Activity xóa chuyến bay](https://github.com/user-attachments/assets/d3761828-16a9-4379-937d-517b72fb5d4c)        |
-| Sơ đồ Activity xóa chuyến bay                                                                    |
-| ![Sơ đồ Activity tìm kiếm chuyến bay](https://github.com/user-attachments/assets/6e711cd8-9b24-4616-9ef3-2a0d86d4f441)    |
-| Sơ đồ Activity tìm kiếm chuyến bay                                                               |
+| ![Sơ đồ Activity thêm sản phẩm](https://github.com/user-attachments/assets/75d73dc0-c045-4aa8-b785-549e49d0c821)      |
+| Sơ đồ Activity thêm sản phẩm                                                                  |
+| ![Sơ đồ Activity sửa sản phẩm](https://github.com/user-attachments/assets/d52fb2fb-049c-490c-ab6e-ab3c628de930)        |
+| Sơ đồ Activity sửa sản phẩm                                                                   |
+| ![Sơ đồ Activity xóa sản phẩm](https://github.com/user-attachments/assets/d3761828-16a9-4379-937d-517b72fb5d4c)        |
+| Sơ đồ Activity xóa sản phẩm                                                                    |
+| ![Sơ đồ Activity tìm kiếm sản phẩm](https://github.com/user-attachments/assets/6e711cd8-9b24-4616-9ef3-2a0d86d4f441)    |
+| Sơ đồ Activity tìm kiếm sản phẩm                                                              |
 | ![Sơ đồ Activity thêm khách hàng](https://github.com/user-attachments/assets/60b95d9b-4a39-4349-8ba0-bfc0694cb5cf)                                        |
 | Sơ đồ Activity thêm khách hàng                                                                   |
 | ![Sơ đồ Activity sửa khách hàng](https://github.com/user-attachments/assets/b1fdbd34-8415-4cd5-8f30-ab9e0939dd97)                                          |
@@ -245,16 +246,14 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 | Sơ đồ Activity sửa đơn hàng                                                                             |
 | ![Sơ đồ Activity xóa đơn hàng ](https://github.com/user-attachments/assets/8e1887e2-31cb-4b86-9ece-e65f8a420d92)                                                  |
 | Sơ đồ Activity xóa đơn hàng                                                                            |
-| ![Sơ đồ Activity tìm kiếm đơn hàng ](***)                                         |
-| Sơ đồ Activity tìm kiếm đơn hàng                                                                       |
 | ![Biểu đồ ca sử dụng tổng quát](https://github.com/user-attachments/assets/8b8bc1cf-044c-4908-8492-2a4b00c1ca05)                                          |
 | Biểu đồ ca sử dụng tổng quát                                                                     |
-| ![Biểu đồ use-case quản lý chuyến bay](https://github.com/user-attachments/assets/a29eb62c-f58f-4647-9287-ece2afa70964)                               |
-| Biểu đồ use-case quản lý chuyến bay                                                              |
+| ![Biểu đồ use-case quản lý sản phẩm](https://github.com/user-attachments/assets/a29eb62c-f58f-4647-9287-ece2afa70964)                               |
+| Biểu đồ use-case quản lý sản phẩm                                                              |
 | ![Biểu đồ use-case quản lý khách hàng](https://github.com/user-attachments/assets/243d0768-9f34-44aa-8159-af636db61d65)                               |
 | Biểu đồ use-case quản lý khách hàng                                                              |
-| ![Biểu đồ use-case quản lý vé](https://github.com/user-attachments/assets/da889f4f-7bdc-4f22-9b54-c4d2f0980041)                                       |
-| Biểu đồ use-case quản lý vé                                                                      |
+| ![Biểu đồ use-case quản lý đơn hàng](https://github.com/user-attachments/assets/da889f4f-7bdc-4f22-9b54-c4d2f0980041)                                       |
+| Biểu đồ use-case quản lý đơn hàng                                                                     |
 | ![Biểu đồ use-case thống kê doanh thu](https://github.com/user-attachments/assets/b99ab2c5-8367-4704-84df-1ab67523fad5)                               |
 | Biểu đồ use-case thống kê doanh thu                                                              |
 | ![Biểu đồ tuần tự chức năng đăng nhập](https://github.com/user-attachments/assets/0a91a0f2-9df7-478d-8bba-b906b0bb9a01)                                 |
@@ -283,14 +282,9 @@ Hiếu xấu trai bị LÂm cứt gà bôi cứt lên mặt
 | Biểu đồ tuần tự chức năng xóa đơn hàng                                                                |
 | ![Biểu đồ tuần tự chức năng tìm kiếm đơn hàng](https://github.com/user-attachments/assets/c6b924f5-2b6b-4328-aaad-a57b89c96832)                        |
 | Biểu đồ tuần tự chức năng tìm kiếm đơn hàng                                                            |
-| ![Sơ đồ thực thể liên kết](img/Sodothucthelienket.png)                                           |
+| ![Sơ đồ thực thể liên kết](https://github.com/user-attachments/assets/165cd1c8-0127-49a6-a441-f6a26207577f)                                           |
 | Sơ đồ thực thể liên kết                                                                          |
-| ![Sơ đồ lớp và thiết kế lớp](img/Sodolopvathietkelop.png)                                        |
-| Sơ đồ lớp và thiết kế lớp                                                                        |
-| ![Try-catch-finally](review/thunghiem/src/main/java/com/example/veapp/img/try-catch-example.png) |
-| Try-catch-finally                                                                                |
-| ![UI quản lý vé](review/thunghiem/src/main/java/com/example/veapp/img/UI_quanlyve.png)           |
-| UI quản lý vé                                                                                    |
+                                                                                
 
 
 
