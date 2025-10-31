@@ -138,7 +138,8 @@ spring.jpa.show-sql=true
 Mở file:
 ```
 
-src/main/java/com/example/phonestore/PhoneStoreApplication.java
+src/main/java/vn/lampham/laptopshop/LaptopshopApplication.java
+
 ```
 
 
@@ -151,7 +152,7 @@ mvn spring-boot:run
 
 ### 🔹 Bước 5: Truy cập hệ thống
 ```
-http://localhost:8080/
+http://localhost:8080
 ```
 
 | Đường dẫn        | Chức năng                   |
