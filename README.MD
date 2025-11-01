@@ -192,7 +192,7 @@ PhoneStoreManager/
 ✅ UML Class Diagram
 ✅ Activity Diagram (Thêm/Sửa/Xóa)
 ✅ Sequence Diagram
-✅ ERD (CSDL cửa hàng điện thoại)
+✅ ERD (CSDL cửa hàng laptop)
 
 📁 Các hình được lưu trong thư mục img/
 
@@ -284,9 +284,9 @@ PhoneStoreManager/
 
 ### 1. 🔹 Sơ đồ hệ thống cơ bản
 
-Hệ thống cửa hàng bán điện thoại được xây dựng với các bảng chính như:
+Hệ thống cửa hàng bán laptop được xây dựng với các bảng chính như:
 
-- `sanpham`: lưu thông tin các sản phẩm điện thoại
+- `sanpham`: lưu thông tin các sản phẩm laptop
 - `khachhang`: lưu thông tin người mua hàng
 - `donhang`: lưu thông tin các đơn hàng được đặt
 - `account`: lưu thông tin tài khoản đăng nhập của khách hàng
