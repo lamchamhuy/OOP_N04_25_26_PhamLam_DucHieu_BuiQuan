@@ -1,4 +1,4 @@
-<h1 align="center">📱 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN Laptopshop</h1>
+<h1 align="center">💻 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN Laptopshop</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17-blue" />
