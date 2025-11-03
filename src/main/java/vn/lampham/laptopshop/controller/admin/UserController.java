@@ -17,8 +17,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import jakarta.validation.Valid;
 import vn.lampham.laptopshop.domain.User;
+import vn.lampham.laptopshop.domain.Role; // 🟢 THÊM DÒNG NÀY
 import vn.lampham.laptopshop.service.UploadService;
 import vn.lampham.laptopshop.service.UserService;
+
 
 @Controller
 public class UserController {
@@ -62,11 +64,14 @@ public class UserController {
     }
 
 
-    @GetMapping("/admin/user/create") // Get
+    @GetMapping("/admin/user/create")
     public String getCreateUserPage(Model model) {
-        model.addAttribute("newUser", new User());
+        User user = new User();
+        user.setRole(new Role()); // ⚠️ thêm dòng này
+        model.addAttribute("newUser", user);
         return "admin/user/create";
     }
+
 
     @PostMapping(value = "/admin/user/create")
     public String createUserPage(Model model,

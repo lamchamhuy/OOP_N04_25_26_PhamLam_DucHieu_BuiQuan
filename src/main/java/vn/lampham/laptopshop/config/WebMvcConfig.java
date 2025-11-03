@@ -14,9 +14,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/images/**")
                 .addResourceLocations(
                         "classpath:/static/images/",
-                        "classpath:/public/images/",
-                        "classpath:/META-INF/resources/images/",
-                        "classpath:/resources/images/",
                         "file:src/main/webapp/resources/images/");
 
         registry.addResourceHandler("/client/**")
@@ -25,10 +22,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
                         "file:src/main/webapp/resources/client/");
 
         registry.addResourceHandler("/css/**")
-                .addResourceLocations("classpath:/static/css/");
+                .addResourceLocations("classpath:/static/css/", "file:src/main/webapp/resources/css/");
 
         registry.addResourceHandler("/js/**")
-                .addResourceLocations("classpath:/static/js/");
+                .addResourceLocations("classpath:/static/js/", "file:src/main/webapp/resources/js/");
 
         registry.addResourceHandler("/resources/**")
                 .addResourceLocations(
@@ -36,13 +33,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
                         "file:src/main/webapp/resources/");
     }
 
-    // 🟢 Cấu hình view resolver để tìm file JSP
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.jsp("/WEB-INF/view/", ".jsp");
     }
 
-    // 🟢 Redirect /admin -> /admin/user
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addRedirectViewController("/admin", "/admin/user");

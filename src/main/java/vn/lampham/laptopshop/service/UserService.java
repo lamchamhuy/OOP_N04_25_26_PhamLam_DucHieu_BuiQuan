@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import jakarta.annotation.PostConstruct;
 import vn.lampham.laptopshop.domain.Role;
 import vn.lampham.laptopshop.domain.User;
 import vn.lampham.laptopshop.domain.dto.RegisterDTO;
@@ -29,9 +31,10 @@ public class UserService {
         return this.userRepository.findAll();
     }
 
-    public List<User> getAllUsersByEmail(String email) {
-        return this.userRepository.findOneByEmail(email);
+    public User getUserByEmail(String email) {
+    return this.userRepository.findByEmail(email).orElse(null);
     }
+
 
     public User handleSaveUser(User user) {
         User eric = this.userRepository.save(user);
@@ -40,8 +43,9 @@ public class UserService {
     }
 
     public User getUserById(long id) {
-        return this.userRepository.findById(id);
-    }
+    return this.userRepository.findById(id).orElse(null);
+}
+
 
     public void deleteAUser(long id) {
         // Xóa user theo ID
@@ -68,7 +72,20 @@ public class UserService {
         return this.userRepository.existsByEmail(email);
     }
 
-    public User getUserByEmail(String email){
-        return this.userRepository.findByEmail(email);
+    public User getUserByEmail(String email) {
+    return this.userRepository.findByEmail(email).orElse(null);
+}
+
+    @PostConstruct
+    public void initAdmin() {
+    if (!userRepository.existsByEmail("admin@gmail.com")) {
+        User admin = new User();
+        admin.setEmail("admin@gmail.com");
+        admin.setPassword(new BCryptPasswordEncoder().encode("123456"));
+        admin.setFullName("Admin Test");
+        admin.setRole(roleRepository.findByName("ADMIN"));
+        userRepository.save(admin);
     }
+}
+
 }

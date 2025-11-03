@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -18,6 +19,7 @@ import vn.lampham.laptopshop.service.CustomUserDetailsService;
 import vn.lampham.laptopshop.service.UserService;
 
 @Configuration
+@EnableWebSecurity // 🔥 cần thêm
 @EnableMethodSecurity(securedEnabled = true)
 public class SecurityConfiguration {
 
@@ -48,29 +50,28 @@ public class SecurityConfiguration {
 
     @Bean
     public SpringSessionRememberMeServices rememberMeServices() {
-        SpringSessionRememberMeServices rememberMeServices =
-                new SpringSessionRememberMeServices();
-        // optionally customize
+        SpringSessionRememberMeServices rememberMeServices = new SpringSessionRememberMeServices();
         rememberMeServices.setAlwaysRemember(true);
         return rememberMeServices;
     }
 
     @Bean
-    SecurityFilterChain filterChain(HttpSecurity http, AuthenticationSuccessHandler customSuccessHandler) throws Exception {
+    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests(authorize -> authorize
                 .dispatcherTypeMatchers(DispatcherType.FORWARD, DispatcherType.INCLUDE).permitAll()
-                .requestMatchers("/", "/login", "/register", "/product/**", "/client/**",
+                .requestMatchers("/", "/login", "/register", "/product/**",
                                  "/resources/**", "/css/**", "/js/**", "/images/**",
-                                 "/cart/**").permitAll()
-                .requestMatchers("/admin/**").hasRole("ADMIN")
+                                 "/cart/**", "/client/**").permitAll()
+                .requestMatchers("/admin/**").hasRole("ADMIN") // ⚠️ kiểm tra DB: nếu role lưu là "ROLE_ADMIN" thì đổi thành .hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
-            .sessionManagement(session -> session
-                .sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
-                .invalidSessionUrl("/logout?expired")
-                .maximumSessions(1)
-                .maxSessionsPreventsLogin(false)
+            .formLogin(form -> form
+                .loginPage("/login")
+                .loginProcessingUrl("/login")
+                .failureUrl("/login?error=true")
+                .successHandler(customSuccessHandler())
+                .permitAll()
             )
             .logout(logout -> logout
                 .logoutUrl("/logout")
@@ -80,17 +81,10 @@ public class SecurityConfiguration {
                 .permitAll()
             )
             .rememberMe(r -> r.rememberMeServices(rememberMeServices()))
-            .formLogin(form -> form
-                .loginPage("/login")
-                .loginProcessingUrl("/login")
-                .failureUrl("/login?error")
-                .successHandler(customSuccessHandler())
-                .permitAll()
+            .sessionManagement(session -> session
+                .sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
             )
-            .exceptionHandling(ex -> ex.accessDeniedPage("/access-deny"));
-
-        // Nếu cần debug, có thể tạm tắt CSRF:
-        // http.csrf().disable();
+            .csrf(csrf -> csrf.disable()); // bật lại sau khi xong phần login/register
 
         return http.build();
     }
