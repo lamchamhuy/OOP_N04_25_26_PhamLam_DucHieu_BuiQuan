@@ -265,7 +265,7 @@ https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master
 | Biểu đồ tuần tự chức năng sửa sản phẩm                                                          |
 | ![Biểu đồ tuần tự chức năng xóa sản phẩm  ](https://github.com/user-attachments/assets/50adf1e0-770e-449e-8d86-8ab8a08196d5)                         |
 | Biểu đồ tuần tự chức năng xóa sản phẩm                                                         |
-f3cde4f1-46ba-4a0a-b94f-d2ff30f74c22)                |
+| ![Biểu đồ tuần tự chức năng tìm kiếm sản phẩm  ](https://github.com/user-attachments/assets/f3cde4f1-46ba-4a0a-b94f-d2ff30f74c22)                |
 | Biểu đồ tuần tự chức năng tìm kiếm sản phẩm                                                      |
 | ![Biểu đồ tuần tự chức năng thêm khách hàng](https://github.com/user-attachments/assets/030aec41-4f10-4311-ad00-8ca7bee350b8)                       |
 | Biểu đồ tuần tự chức năng thêm khách hàng                                                        |
