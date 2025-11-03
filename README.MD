@@ -159,8 +159,8 @@ http://localhost:8080/
 | ---------------- | --------------------------- |
 |   `/ admin  	`  |  Quản lý sản phẩm laptop|
 |  `/ admin/user`  |   Quản lý người dùng        |
-|   `/admin/product|   Quản lý sản phẩm          |
-|  `/admin/order   |	 Quản lý đơn hàng          |
+|  `/admin/product`|   Quản lý sản phẩm          |
+|  `/admin/order`  |	 Quản lý đơn hàng          |
 |  `      /      ` |	 Trang chủ hệ thống        |
 
 
