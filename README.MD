@@ -170,7 +170,7 @@ http://localhost:8080/
 
 ```
 laptopshop/
-├── controller/admin        # Controller (SanPham, DonHang, KhachHang,...)
+├── controller/admin        # Controller (DashboardController, OrderController, ProductController,UserController)
 ├── service/                # Business logic
 ├── repository/             # Tầng truy cập dữ liệu (JPA)
 ├── model/                  # Entity (SanPham, KhachHang, DonHang)
