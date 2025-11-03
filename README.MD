@@ -190,8 +190,11 @@ PhoneStoreManager/
 - Các biểu đồ đã hoàn thành:
 
 ✅ UML Class Diagram
+
 ✅ Activity Diagram (Thêm/Sửa/Xóa)
+
 ✅ Sequence Diagram
+
 ✅ ERD (CSDL cửa hàng laptop)
 
 📁 Các hình được lưu trong thư mục img/
@@ -206,6 +209,7 @@ PhoneStoreManager/
 | 23010726  | **Nguyễn Đức Hiếu**     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                        |
 
 📍 Trường: **Đại học Phenikaa** 
+
 📫 GitHub nhóm: 
 [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
@@ -325,4 +329,4 @@ Dự án giúp chúng em củng cố kiến thức về lập trình Java – Sp
 Dự án phục vụ mục đích học tập tại Đại học Phenikaa.
 Không sử dụng cho mục đích thương mại nếu không có sự cho phép từ nhóm phát triển.
 
-📩 Liên hệ: nguyenvantu@phenikaa-uni.edu.vn
+📩 Liên hệ: 23010820@st.phenikaa-uni.edu.vn
