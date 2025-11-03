@@ -1,4 +1,4 @@
-<h1 align="center">📱 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN Laptopshop</h1>
+<h1 align="center">💻 ỨNG DỤNG QUẢN LÝ CỬA HÀNG BÁN LAPTOP</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17-blue" />
@@ -16,11 +16,11 @@
 
 ## 📘 Giới thiệu
 
-Đây là ứng dụng quản lý cửa hàng bán laptopshop được phát triển bằng **Java Spring Boot** kết hợp với **Thymeleaf** cho giao diện người dùng.  
+Đây là ứng dụng quản lý cửa hàng bán laptop được phát triển bằng **Java Spring Boot** kết hợp với **Thymeleaf** cho giao diện người dùng.  
 Cơ sở dữ liệu sử dụng **MySQL (hoặc Aiven Cloud)**, được thiết kế theo mô hình **MVC 3 lớp**, giúp dễ bảo trì và mở rộng.
 
 Ứng dụng hỗ trợ các chức năng như:  
-🛍️ Quản lý sản phẩm Laptopshop,  
+🛍️ Quản lý sản phẩm Laptop,  
 👨‍💼 Quản lý khách hàng,  
 📦 Quản lý đơn hàng,  
 👨‍💼 Quản lý người dùng,  
@@ -30,7 +30,7 @@ và tích hợp kiểm thử tự động với **JUnit**.
 
 ## 🎯 Mục tiêu dự án
 
-- Xây dựng hệ thống quản lý cửa hàng Laptopshop chuyên nghiệp, trực quan.  
+- Xây dựng hệ thống quản lý cửa hàng Laptop chuyên nghiệp, trực quan.  
 - Thiết kế kiến trúc rõ ràng theo mô hình **MVC 3 lớp**.  
 - Thực hiện đầy đủ **CRUD**, kiểm tra đầu vào và ràng buộc dữ liệu.  
 - Dễ mở rộng lên REST API hoặc thêm phân quyền quản trị viên.  
@@ -157,7 +157,7 @@ http://localhost:8080/
 
 | Đường dẫn        | Chức năng                   |
 | ---------------- | --------------------------- |
-|   `/ admin  	`  |  Quản lý sản phẩm laptopshop|
+|   `/ admin  	`  |  Quản lý sản phẩm laptop|
 |  `/ admin/user`  |   Quản lý người dùng        |
 |   `/admin/product|   Quản lý sản phẩm          |
 |  `/admin/order   |	 Quản lý đơn hàng          |
@@ -190,9 +190,12 @@ PhoneStoreManager/
 - Các biểu đồ đã hoàn thành:
 
 ✅ UML Class Diagram
+
 ✅ Activity Diagram (Thêm/Sửa/Xóa)
+
 ✅ Sequence Diagram
-✅ ERD (CSDL cửa hàng điện thoại)
+
+✅ ERD (CSDL cửa hàng laptop)
 
 📁 Các hình được lưu trong thư mục img/
 
@@ -201,11 +204,12 @@ PhoneStoreManager/
 ## 👨‍💻 Nhóm thực hiện
 | MSSV      | Họ và Tên                | Vai trò chi tiết                                                                                      |
 | --------  | -------------------------| ----------------------------------------------------------------------------------------------        |
-| 23010820  | **Phạm Tùng Lâm**       |Thiết kế Xây dựng giao diện web laptopshop chính , xây dựng chức năng quản lý user, order,viết README  |
-| 23010725  | **Bùi Minh Quân**       | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm                            |
-| 23010726  | **Nguyễn Đức Hiếu**     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                       |
+| 23010820  | **Phạm Tùng Lâm**       |Thiết kế Xây dựng giao diện web laptop chính , xây dựng chức năng quản lý user, order,viết README       |
+| 23010725  | **Bùi Minh Quân**       | Xây dựng chức năng quản lý product,  viết README, làm báo cáo bài tập nhóm                             |
+| 23010726  | **Nguyễn Đức Hiếu**     | validate dữ liệu đầu vào, làm báo cáo bài tập nhóm, viết README                                        |
 
 📍 Trường: **Đại học Phenikaa** 
+
 📫 GitHub nhóm: 
 [https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan](https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master)
 
@@ -284,9 +288,9 @@ PhoneStoreManager/
 
 ### 1. 🔹 Sơ đồ hệ thống cơ bản
 
-Hệ thống cửa hàng bán điện thoại được xây dựng với các bảng chính như:
+Hệ thống cửa hàng bán laptop được xây dựng với các bảng chính như:
 
-- `sanpham`: lưu thông tin các sản phẩm điện thoại
+- `sanpham`: lưu thông tin các sản phẩm laptop
 - `khachhang`: lưu thông tin người mua hàng
 - `donhang`: lưu thông tin các đơn hàng được đặt
 - `account`: lưu thông tin tài khoản đăng nhập của khách hàng
@@ -325,4 +329,4 @@ Dự án giúp chúng em củng cố kiến thức về lập trình Java – Sp
 Dự án phục vụ mục đích học tập tại Đại học Phenikaa.
 Không sử dụng cho mục đích thương mại nếu không có sự cho phép từ nhóm phát triển.
 
-📩 Liên hệ: nguyenvantu@phenikaa-uni.edu.vn
+📩 Liên hệ: 23010820@st.phenikaa-uni.edu.vn
