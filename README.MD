@@ -170,15 +170,19 @@ http://localhost:8080/
 
 ```
 laptopshop/
-├── controller/admin        # Controller (DashboardController, OrderController, ProductController,UserController)
-├── service/                # Business logic
-├── repository/             # Tầng truy cập dữ liệu (JPA)
-├── model/                  # Entity (SanPham, KhachHang, DonHang)
-├── templates/              # Giao diện Thymeleaf
-├── static/                 # CSS, JS, hình ảnh
-├── PhoneStoreApplication.java
-├── application.properties
-└── README.md
+├── config/                         # Cấu hình bảo mật, cấu hình MVC (Security, Handler, WebMvcConfig)
+├── controller/                     # Controller xử lý request từ Client + Admin (Product, User, Order,...)
+├── service/                        # Business logic xử lý nghiệp vụ (ProductService, UserService,...)
+├── repository/                     # Giao tiếp CSDL (JpaRepository)
+├── domain/                         # Các Entity + DTO (User, Role, Product, Cart, Order,...)
+│     └── dto/                      # dữ liệu truyền qua form (RegisterDTO)
+├── validator/                      # Custom Annotation validate form (StrongPassword, RegisterChecked,…)
+├── templates/                      # Giao diện Thymeleaf (.html)
+├── static/                         # CSS, JS, hình ảnh upload
+├── LaptopshopApplication.java      # Class main khởi chạy Spring Boot
+├── application.properties          # Cấu hình kết nối DB + Spring Security
+└── README.md                       # Mô tả dự án
+
 
 ```
 
