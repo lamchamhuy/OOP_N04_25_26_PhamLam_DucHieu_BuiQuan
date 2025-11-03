@@ -161,10 +161,8 @@ http://localhost:8080/
 |  `/ admin/user`  |   Quản lý người dùng        |
 |   `/admin/product|   Quản lý sản phẩm          |
 |  `/admin/order   |	 Quản lý đơn hàng          |
-|   `/admin/product|   Quản lý sản phẩm          |
-|  `/  hoặc /home` |	 Trang chủ hệ thống        |
-|   `/admin/product|   Quản lý sản phẩm          |
-|  `/  hoặc /home` |	 Trang chủ hệ thống        |
+|  `      /      ` |	 Trang chủ hệ thống        |
+
 
 ---
 

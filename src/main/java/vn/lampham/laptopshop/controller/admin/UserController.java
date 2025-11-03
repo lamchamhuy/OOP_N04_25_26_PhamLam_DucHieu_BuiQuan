@@ -17,7 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import jakarta.validation.Valid;
 import vn.lampham.laptopshop.domain.User;
-import vn.lampham.laptopshop.domain.Role; // 🟢 THÊM DÒNG NÀY
+import vn.lampham.laptopshop.domain.Role; 
 import vn.lampham.laptopshop.service.UploadService;
 import vn.lampham.laptopshop.service.UserService;
 
