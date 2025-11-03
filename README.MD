@@ -169,8 +169,8 @@ http://localhost:8080/
 ## 📂 Cấu trúc thư mục dự án
 
 ```
-PhoneStoreManager/
-├── controller/             # Controller (SanPham, DonHang, KhachHang,...)
+laptopshop/
+├── controller/admin        # Controller (SanPham, DonHang, KhachHang,...)
 ├── service/                # Business logic
 ├── repository/             # Tầng truy cập dữ liệu (JPA)
 ├── model/                  # Entity (SanPham, KhachHang, DonHang)
