@@ -107,7 +107,7 @@ và tích hợp kiểm thử tự động với **JUnit**.
 ### 🔹 Bước 2: Tải mã nguồn
 
 ```bash
-git clone https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master.git
+git clone https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan.git
 ```
 Hoặc giải nén file .zip nếu tải từ LMS/Drive.
 ---
