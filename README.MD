@@ -108,9 +108,8 @@ và tích hợp kiểm thử tự động với **JUnit**.
 
 ```bash
 git clone https://github.com/lamchamhuy/OOP_N04_25_26_PhamLam_DucHieu_BuiQuan/tree/master.git
-Hoặc giải nén file .zip nếu tải từ LMS/Drive.
 ```
-
+Hoặc giải nén file .zip nếu tải từ LMS/Drive.
 ---
 
 ### 🔹 Bước 3: Cấu hình CSDL
